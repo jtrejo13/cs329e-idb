@@ -1,7 +1,7 @@
 import config
+import app as app_lib
 
-
-app = bookshelf.create_app(config)
+app = app_lib.create_app(config)
 
 
 # This is only used when running locally. When running live, gunicorn runs

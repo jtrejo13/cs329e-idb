@@ -1,4 +1,4 @@
-from flask import flask
+from flask import Flask
 
 
 def create_app(config, debug=False, testing=False, config_overrides=None):
