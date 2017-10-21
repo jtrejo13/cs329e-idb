@@ -9,13 +9,13 @@
 # 
 # Created: Sat Oct 21 12:52:27 2017 (-0500)
 # Version: 
-# Last-Updated: Sat Oct 21 12:55:16 2017 (-0500)
+# Last-Updated: Sat Oct 21 15:35:57 2017 (-0500)
 #           By: yulu
-#     Update #: 1
+#     Update #: 2
 # 
 
 from app import app
-from flask import Flask
+from flask import Flask, url_for
 from flask import render_template
 
 @app.route('/')

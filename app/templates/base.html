@@ -2,16 +2,26 @@
   <html lang="en">
     <head>
       <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/style.css') }}"/>
       <title> nettunes </title>
     </head>
 
     <body>
-      {% block header %} {% endblock %}
+      <div class='page'>
+	<div class='header'>
+	  {% block header %} {% endblock %}
+	</div>
 
-      {% block content %} {% endblock %}
+	<div class='content'>
+	  {% block content %} {% endblock %}
+	</div>
 
-      {% block footer %} {% endblock %}
+	<div class='footer'>
+	  {% block footer %} {% endblock %}
+	</div>
+	
+      </div>
     </body>
   </html>
   
