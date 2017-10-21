@@ -4,6 +4,11 @@
 Here i quickly wrote a flask warpper of the structure of plain html with links to each subpages   
 The app has a *package* structure rather than *module*, for easier maintenance.  
 Tring to make CSS work with flask nicely     
+
+## How it looks like now ?  
+Current the website is hosted on yellowjacket, follow this link:  
+[http://128.83.139.95:5000/](http://128.83.139.95:5000/)  
+
 ## How to Run  
 Simply clone from this branch  
 ```
