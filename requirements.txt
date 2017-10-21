@@ -1,5 +1,4 @@
 appdirs==1.4.3
-arc==1.2.1
 Archey3==0.4
 certifi==2017.7.27.1
 chardet==3.0.4
