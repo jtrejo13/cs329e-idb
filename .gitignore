@@ -1,8 +1,2 @@
-.coverage
-*.pyc
-.idea
-.coverage
-venv
-*.swp
-.DS_STORE
-env
+__pycache__
+*~
