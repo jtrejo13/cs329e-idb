@@ -1,0 +1,30 @@
+﻿[
+ {
+   "NAME": "Coldplay",
+   "NO_OF_MEMBERS": 4,
+   "START DATE": 1996,
+   "ORIGIN": "London, England",
+   "NO_OF_ALBUMS": 7
+ },
+ {
+   "NAME": "Raffi",
+   "NO_OF_MEMBERS": 1,
+   "START DATE": 1974,
+   "ORIGIN": "Toronto, Ontario",
+   "NO_OF_ALBUMS": 31
+ },
+ {
+   "NAME": "OneRepublic",
+   "NO_OF_MEMBERS": 5,
+   "START DATE": 2002,
+   "ORIGIN": "Colorado, US",
+   "NO_OF_ALBUMS": 4
+ },
+ {
+   "NAME": "Nine Inch Nails",
+   "NO_OF_MEMBERS": 1,
+   "START DATE": 1988,
+   "ORIGIN": "Cleveland, Ohio",
+   "NO_OF_ALBUMS": 11
+ }
+]
