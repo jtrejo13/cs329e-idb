@@ -26,7 +26,7 @@ def artists():
     json_url = os.path.join(SITE_ROOT, "static/json", "Bands.json")
     with codecs.open(json_url, 'r', 'utf-8-sig') as f:
         data = json.load(f)
-    tableTitles = ['NAME', 'NO_OF_TRACKS', 'START DATE', 'ORIGIN', 'NO_OF_ALBUMS']
+    tableTitles = ['NAME', 'NO_OF_MEMBERS', 'START DATE', 'ORIGIN', 'NO_OF_ALBUMS']
     return render_template("artists.html",
                            tableTitles = tableTitles,
                            data = data)
