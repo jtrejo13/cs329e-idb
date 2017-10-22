@@ -7,7 +7,27 @@
 {% block content %}
 <hr>
 <p> Put <strong> list of songs </strong>  here with links to artists and alblums </p>
+
+<table class="table">
+  <tr>
+    {% for key in tableTitles %}
+    <th> {{ key }} </th>
+    {% endfor %}
+  </tr>
+  
+  {% for song in data %}
+  <tr>
+    {% for value in song.values() %}
+    <td> {{ value }} </td>
+    {% endfor %}
+  </tr>
+  {% endfor %}
+</table>
+
+    
 {% endblock %}
+
+
 
 {% block footer %}
 {% include "footer.html" %}

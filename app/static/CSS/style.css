@@ -7,7 +7,7 @@ body{
     font-size: 20px;
     overflow-x: hidden;
     overflow-y: scroll;
-    background: url("../img/background1.jpg");
+    background: white /*url("../img/background1.jpg"); */
     background-size: cover;
     
 		   
@@ -81,6 +81,7 @@ nav li a:visited{
 ------------------------------*/
 footer{
     position: absolute;
+    top: 90%;
     bottom: 0;
     width: 100%;
     color: black;
