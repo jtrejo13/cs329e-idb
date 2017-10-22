@@ -17,8 +17,9 @@
   
   {% for song in data %}
   <tr>
-    {% for value in song.values() %}
-    <td> {{ value }} </td>
+    {% for key in tableTitles %}
+    
+    <td> {{ song[key] }} </td>
     {% endfor %}
   </tr>
   {% endfor %}
