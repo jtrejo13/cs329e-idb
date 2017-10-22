@@ -1,0 +1,30 @@
+﻿[
+ {
+   "NAME": "A Rush of Blood to the Head",
+   "NO_OF_TRACKS": 11,
+   "BAND": "Coldplay",
+   "GENRE": "Alternative Rock",
+   "YEAR_OF_RELEASE": 2002
+ },
+ {
+   "NAME": "Single",
+   "NO_OF_TRACKS": 1,
+   "BAND": "OneRepublic",
+   "GENRE": "Pop",
+   "YEAR_OF_RELEASE": 2012
+ },
+ {
+   "NAME": "Bananaphone",
+   "NO_OF_TRACKS": 16,
+   "BAND": "Raffi",
+   "GENRE": "Children's",
+   "YEAR_OF_RELEASE": 1994
+ },
+ {
+   "NAME": "Pretty Hate Machine",
+   "NO_OF_TRACKS": 10,
+   "BAND": "Nine Inch Nails",
+   "GENRE": "Industrial",
+   "YEAR_OF_RELEASE": 1989
+ }
+]

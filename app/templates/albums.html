@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block header %}
+{% include "header.html"%}
+{% endblock %}
+
+{% block content %}
+<h1> Albums </h1>
+<hr>
+<table class="table">
+  <tr>
+    {% for key in tableTitles %}
+    <th> {{ key }} </th>
+    {% endfor %}
+  </tr>
+  
+  {% for name in data %}
+  <tr>
+    {% for key in tableTitles %}
+    <td> {{ name[key] }} </td>
+    {% endfor %}
+  </tr>
+  {% endfor %}
+</table>
+
+<h2> Chris and Rachel are working on individual subpages </h2>
+<h2> Yu will work on general CSS and header footer etc. </h2>
+{% endblock %}
+
+{% block footer %}
+{% include "footer.html" %}
+{% endblock %}
+

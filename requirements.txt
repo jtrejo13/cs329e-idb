@@ -1,8 +1,8 @@
+coverage==4.4.1
+decorator==4.1.2
 Flask==0.12.2
-google-cloud==0.27.0
-gunicorn==19.7.1
-oauth2client==4.1.2
-Flask-SQLAlchemy==2.3.2
-PyMySQL==0.7.11
-six==1.11.0
-coverage
+Flask-WTF==0.14.2
+Jinja2==2.9.6
+packaging==16.8
+pandas==0.19.2
+-e git+https://github.com/pwexler/xml2py.git@4c6973f9647454d65eafb413d65b87b4d06bd81e#egg=xml2py
