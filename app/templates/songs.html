@@ -18,8 +18,21 @@
   {% for song in data %}
   <tr>
     {% for key in tableTitles %}
-    
-    <td> {{ song[key] }} </td>
+    {% if key == "VIDEO_LINK" %}
+    <td>
+      <div class = "video-icon">
+	<a href={{ song[key] }}> <img src={{ url_for('static', filename = "img/icon-youtube.png") }} alt="watch on youtube" height="30"/> </a>
+      </div>
+    </td>
+    {% elif key == "LYRICS_LINK" %}
+    <td>
+      <div class = "lyrics-icon">
+	<a href={{ song[key] }}> <img src={{ url_for('static', filename = "img/icon-genius.png") }} alt="lyrics on genius" height="30"></a>
+      </div>
+    </td>
+      {% else %} 
+      <td> {{ song[key] }} </td>
+    {% endif %}
     {% endfor %}
   </tr>
   {% endfor %}
