@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{% block header %}
+{% include "header.html"%}
+{% endblock %}
+
+{% block content %}
+<div class="image-area"><img id="album-cover" src="https://upload.wikimedia.org/wikipedia/en/6/6e/Coldplay_-_A_Rush_of_Blood_to_the_Head.jpg" alt="A Rush of Blood to the Head"></div>
+
+<div class="data-area">
+  <p class="data">Released: 2002</p>
+  <p class="data"># of tracks: 11</p>
+  <p class="data">Alternative Rock</p>
+</div>
+
+<div class="large-area">
+  <p id="album-title">A Rush of Blood to the Head</p>
+  <p id="band-name">by: Coldplay<!-- ADD LINK --></p>
+  <p id="song-title">Featured Song: God Put a Smile upon Your Face<!-- ADD LINK --></p>
+  <br>
+  <h1>Track Listing</h1>
+  <table class="list">
+    <tr>
+      <th>No.</th>
+      <th>Title</th>
+      <th>Length</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Politik</td>
+      <td>5:18</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>In My Place</td>
+      <td>3:48</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>God Put a Smile upon Your Face</td>
+      <td>4:57</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>The Scientist</td>
+      <td>5:09</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Clocks</td>
+      <td>5:07</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Daylight</td>
+      <td>5:27</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Green Eyes</td>
+      <td>3:43</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Warning Sign</td>
+      <td>5:31</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>A Whisper</td>
+      <td>3:58</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>A Rush of Blood to the Head</td>
+      <td>5:51</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Amsterdam</td>
+      <td>5:19</td>
+    </tr>
+  </table>
+</div>
+
+{% endblock %}
+
+{% block footer %}
+{% include "footer.html" %}
+{% endblock %}
