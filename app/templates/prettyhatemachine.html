@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block header %}
+{% include "header.html"%}
+{% endblock %}
+
+{% block content %}
+<div class="image-area"><img id="album-cover" src="https://images-na.ssl-images-amazon.com/images/I/41JQDC303VL.jpg" alt="Pretty Hate Machine"></div>
+
+<div class="data-area">
+  <p class="data">Released: 1989</p>
+  <p class="data"># of tracks: 10</p>
+  <p class="data">Industrial</p>
+</div>
+
+<div class="large-area">
+  <p id="song-title">Pretty Hate Machine</p>
+  <p id="band-name">by: Nine Inch Nails<!-- ADD LINK --></p>
+  <p id="song-link">Head Like a Hole<!-- ADD LINK --></p>
+  <br>
+  <p id="tracks">Track Listing</p>
+  <table id="track-list">
+    <tr>
+      <th>No.</th>
+      <th>Title</th>
+      <th>Length</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Head Like a Hole</td>
+      <td>4:59</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Terrible Lie</td>
+      <td>4:38</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Down in It</td>
+      <td>3:46</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Sanctified</td>
+      <td>5:48</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Something I Can Never Have</td>
+      <td>5:55</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Kinda I Want To</td>
+      <td>4:34</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Sin</td>
+      <td>4:05</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>That's What I Get</td>
+      <td>4:30</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>The Only Time</td>
+      <td>4:47</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Ringfinger</td>
+      <td>5:42</td>
+    </tr>
+  </table>
+</div>
+
+{% endblock %}
+
+{% block footer %}
+{% include "footer.html" %}
+{% endblock %}
