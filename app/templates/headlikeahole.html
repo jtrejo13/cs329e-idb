@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block header %}
+{% include "header.html"%}
+{% endblock %}
+
+{% block content %}
+<div class="image-area"><img id="album-cover" src="https://images.genius.com/ec557fa016b53ef0fbd4840ae8720a85.1000x1000x1.jpg" alt="head like a hole"></div>
+
+<div class="data-area">
+  <p class="data">Released: 1989</p>
+  <p class="data">Pretty Hate Machine</p>
+  <p class="data">Industrial</p>
+  <p class="data">Duration 5:00</p>
+</div>
+
+<div class="large-area">
+  <p id="song-title">Head Like a Hole</p>
+  <p id="band-name">Nine Inch Nails</p>
+  <p id="lyrics-link"><a href="https://genius.com/Nine-inch-nails-head-like-a-hole-lyrics">Song Lyrics</a></p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/cV2EUUF47Ms" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
+{% endblock %}
+
+{% block footer %}
+{% include "footer.html" %}
+{% endblock %}
