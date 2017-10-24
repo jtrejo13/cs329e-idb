@@ -1,4 +1,4 @@
-# CS329E iDB Project  
+# CS329E idb Project - NetTunes
 ## About
 
 ## How to Run  
