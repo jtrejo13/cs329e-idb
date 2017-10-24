@@ -1,20 +1,12 @@
 # CS329E iDB Project  
 ## About
-**Hi team**  
-Here i quickly wrote a flask warpper of the structure of plain html with links to each subpages   
-The app has a *package* structure rather than *module*, for easier maintenance.  
-Tring to make CSS work with flask nicely     
-
-## How it looks like now ?  
-Current the website is hosted on yellowjacket, follow this link:  
-[http://128.83.139.95:5000/](http://128.83.139.95:5000/)  
 
 ## How to Run  
 Simply clone from this branch  
 ```
 git clone git@github.com:jtrejo13/cs329e-idb.git
-git pull origin flask_setup
-git checkout flask_setup 
+
+git pull origin master
 ``` 
 and if you havn't got flask install, do  
 ```
@@ -37,8 +29,3 @@ localhost:5000
 + js for interactive response
 + make the whole webpage responsive 
 + host on GCP
-## Any suggestions ?  
-You're welcomed to open a new issue and label it as "enhancement" 
-
-
-
