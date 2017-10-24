@@ -1,7 +1,7 @@
 .navigation{
     position: absolute;
     width: 100vw;
-    height: 12vh;
+    height: 10vh;
     top: 0;
     left: 0;
     background: linear-gradient(to right, #181818, #ABABAB);
@@ -9,23 +9,21 @@
 
 
 .site-logo {
-    position: relative;
-    top: 0;
-    bottom: 0;
-    left: 2%;
     float: left;
+    margin: 0 1vw;    
     display: inline-block;
 }
 
 .site-logo img{
-    height: 100%;
-    width: auto;
+    width: 15vw;
+    height: auto;
+    
 }
 
 nav ul{
-    float: left;
+    float: right;
     color: white;
-    margin: 2% 5%;
+    margin: 3vh 4vw;
     font-weight: 600;
     font-size: 1.5vw;
 }
