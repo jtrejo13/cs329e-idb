@@ -1,0 +1,45 @@
+.navigation{
+    position: absolute;
+    width: 100vw;
+    height: 12vh;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #181818, #ABABAB);
+}
+
+
+.site-logo {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 2%;
+    float: left;
+    display: inline-block;
+}
+
+.site-logo img{
+    height: 100%;
+    width: auto;
+}
+
+nav ul{
+    float: left;
+    color: white;
+    margin: 2% 5%;
+    font-weight: 600;
+    font-size: 1.5vw;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 2vw;
+}
+
+nav li:hover{
+    transform: scale(1.2);
+}
+
+nav li a:visited{
+    color: inherit;
+    text-decoration: inherit;
+}
