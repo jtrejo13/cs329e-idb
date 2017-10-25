@@ -17,13 +17,11 @@
       <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
       <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/style.css') }}"/>
-<<<<<<< HEAD
       <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/navigation.css') }}"/>
       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/footer.css') }}"/> -->
       <!-- Custom styles for header -->
       <link href="../static/css/navigation.css" rel="stylesheet">
       <link href="../static/css/footer.css" rel="stylesheet">
-=======
       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/navigation.css') }}"/>
       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/footer.css') }}"/>
       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/table.css') }}"/>
@@ -31,7 +29,6 @@
       <script type="text/javascript" src="{{ url_for('static', filename="JavaScript/jquery.tablesorter.combined.min.js") }}"></script>
       <script type="text/javascript" src="{{ url_for('static', filename="JavaScript/ jquery.tablesorter.widgets.js") }}"></script>
       <title> nettunes </title>
->>>>>>> table-improve
     </head>
 
     <body id="page-top">
@@ -44,8 +41,11 @@
 
     	  {% block footer %} {% endblock %}
       </div>
-            <!-- Bootstrap core JavaScript -->
-      <script src="../static/splash/jquery/jquery.min.js"></script>
+      <!-- Bootstrap core JavaScript -->
+
+      
+      <!-- Enable below js will break table sort jquery 
+	   <script src="../static/splash/jquery/jquery.min.js"></script> -->
       <script src="../static/splash/bootstrap/js/bootstrap.bundle.min.js"></script>
       <!-- Plugin JavaScript -->
       <script src="../static/splash/jquery-easing/jquery.easing.min.js"></script>
@@ -54,6 +54,7 @@
       <script src="../static/splash/js/contact_me.js"></script>
       <!-- Custom scripts for this template -->
       <script src="../static/splash/js/agency.js"></script>
+     
     </body>
   </html>
   
