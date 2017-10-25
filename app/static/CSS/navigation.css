@@ -1,43 +1,28 @@
-.navigation{
-    position: absolute;
-    width: 100vw;
-    height: 10vh;
-    top: 0;
-    left: 0;
-    background: linear-gradient(to right, #181818, #ABABAB);
-}
-
-
-.site-logo {
-    float: left;
-    margin: 0 1vw;    
-    display: inline-block;
-}
-
-.site-logo img{
-    width: 15vw;
-    height: auto;
-    
-}
-
-nav ul{
-    float: right;
-    color: white;
-    margin: 3vh 4vw;
-    font-weight: 600;
-    font-size: 1.5vw;
-}
-
-nav li{
-    display: inline-block;
-    margin: 0 2vw;
-}
-
-nav li:hover{
-    transform: scale(1.2);
-}
-
-nav li a:visited{
-    color: inherit;
-    text-decoration: inherit;
-}
+#mainNav {
+background-color: #212529; }
+#mainNav .navbar-toggler {
+font-size: 12px;
+right: 0;
+padding: 0;
+text-transform: lowercase;
+color: white;
+border: 0;
+background-color: #fed136;
+font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+#mainNav .navbar-brand {
+font-size: 1.25em;
+color: #fed136;
+font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive; }
+#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+  color: #fec503; }
+#mainNav .navbar-nav .nav-item .nav-link {
+font-size: 80%;
+font-weight: 400;
+padding: 0 0;
+letter-spacing: 1px;
+color: white;
+font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: #fed136; }
+#mainNav .navbar-nav .nav-item .nav-link {
+padding: 1.1em 1em !important; }  

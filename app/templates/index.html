@@ -1,19 +1,321 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>NetTunes - Your Go-To Music Database</title>
+      <!-- Bootstrap core CSS -->
+      <link href="../static/splash/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Custom fonts for this template -->
+      <link href="../static/splash/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+      <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+      <!-- Custom styles for this template -->
+      <link href="../static/css/agency.css" rel="stylesheet">
+   </head>
+   <body id="page-top">
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+         <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">NetTunes</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+               <ul class="navbar-nav text-uppercase ml-auto">
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="/artists">Artists</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="/albums">Albums</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="/songs">Songs</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="/#team">Team</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="/about">About</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
 
+      <!-- Header -->
+      <header class="masthead">
+         <div class="container">
+            <div class="intro-text">
+               <div class="intro-heading">Discover New Music<br />Today.</div>
+               <!-- <div class="intro-lead-in">NetTunes</div> -->
+               <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="/artists">Start Exploring</a>
+            </div>
+         </div>
+      </header>
 
-{% block header %}
-{% include "navigation.html" %}
-{% endblock %}
+      <!-- Feautred Grid -->
+      <section class="bg-light" id="portfolio">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12 text-center">
+                  <h2 class="section-heading text-uppercase">Featured</h2>
+                  <h3 class="section-subheading text-muted">Discover the top trending songs and artists.</h3>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-4 col-sm-6 portfolio-item">
+                  <a class="portfolio-link" href="/coldplay">
+                     <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                           <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                     </div>
+                     <img class="img-fluid" src="../static/img/01-thumbnail.jpg" alt="">
+                  </a>
+                  <div class="portfolio-caption">
+                     <h4>Coldplay</h4>
+                     <p class="text-muted">London, England</p>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6 portfolio-item">
+                  <a class="portfolio-link" href="/onerepublic">
+                     <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                           <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                     </div>
+                     <img class="img-fluid" src="../static/img/02-thumbnail.jpg" alt="">
+                  </a>
+                  <div class="portfolio-caption">
+                     <h4>OneRepublic</h4>
+                     <p class="text-muted">Colorado Springs, CO</p>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6 portfolio-item">
+                  <a class="portfolio-link" href="nineinchnails">
+                     <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                           <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                     </div>
+                     <img class="img-fluid" src="../static/img/03-thumbnail.jpg" alt="">
+                  </a>
+                  <div class="portfolio-caption">
+                     <h4>Nine Inch Nails</h4>
+                     <p class="text-muted">Cleveland, Ohio</p>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6 portfolio-item">
+                  <a class="portfolio-link" href="raffi">
+                     <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                           <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                     </div>
+                     <img class="img-fluid" src="../static/img/04-thumbnail.jpg" alt="">
+                  </a>
+                  <div class="portfolio-caption">
+                     <h4>Raffi</h4>
+                     <p class="text-muted">Toronto, Ontario</p>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6 portfolio-item">
+                  <a class="portfolio-link" href="headlikeahole">
+                     <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                           <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                     </div>
+                     <img class="img-fluid" src="../static/img/05-thumbnail.jpg" alt="">
+                  </a>
+                  <div class="portfolio-caption">
+                     <h4>Head Like a Hole</h4>
+                     <p class="text-muted">Pretty Hate Machine</p>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6 portfolio-item">
+                  <a class="portfolio-link" href="godputasmileuponyourface">
+                     <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                           <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                     </div>
+                     <img class="img-fluid" src="../static/img/06-thumbnail.jpg" alt="">
+                  </a>
+                  <div class="portfolio-caption">
+                     <h4>God Put a Smile Upon Your Face</h4>
+                     <p class="text-muted">A Rush of Blood to the Head</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
 
-{% block content %}
-<h1> Juan is working on this splash page</h1>
-
-
-{% endblock %}
-
-{% block footer %}
-{% include "footer.html" %}
-{% endblock %}
-
-
-
+      <!-- Team -->
+      <section class="bg-light" id="team">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12 text-center">
+                  <h2 class="section-heading text-uppercase">The Team</h2>
+                  <h3 class="section-subheading text-muted">Changing the world one website at a time.</h3>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-sm-4">
+                  <div class="team-member">
+                     <img class="mx-auto rounded-circle" src="../static/img/team/2.jpg" alt="">
+                     <h4>Chris Johnson</h4>
+                     <p class="text-muted">Developer</p>
+                     <ul class="list-inline social-buttons">
+                        <li class="list-inline-item">
+                           <a href="https://github.com/crjohn14" target="_blank">
+                           <i class="fa fa-github"></i>
+                           </a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a href="https://www.linkedin.com/in/christopher-r-johnson/" target="_blank"> 
+                           <i class="fa fa-linkedin"></i>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-sm-4">
+                  <div class="team-member">
+                     <img class="mx-auto rounded-circle" src="../static/img/team/Juan.jpg" alt="">
+                     <h4>Juan Trejo</h4>
+                     <p class="text-muted">Developer</p>
+                     <ul class="list-inline social-buttons">
+                        <li class="list-inline-item">
+                           <a href="https://github.com/jtrejo13" target="_blank">
+                           <i class="fa fa-github"></i>
+                           </a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a href="https://www.linkedin.com/in/jtrejo13/" target="_blank">
+                           <i class="fa fa-linkedin"></i>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-sm-4">
+                  <div class="team-member">
+                     <img class="mx-auto rounded-circle" src="../static/img/team/3.jpg" alt="">
+                     <h4>Rachel Tarrant</h4>
+                     <p class="text-muted">Developer</p>
+                     <ul class="list-inline social-buttons">
+                        <li class="list-inline-item">
+                           <a href="https://github.com/tarrantrl" target="_blank">
+                           <i class="fa fa-github"></i>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-6">
+                  <div class="team-member">
+                     <img class="mx-auto rounded-circle" src="../static/img/team/1.jpg" alt="">
+                     <h4>Ruth Mendez</h4>
+                     <p class="text-muted">Developer</p>
+                     <ul class="list-inline social-buttons">
+                        <li class="list-inline-item">
+                           <a href="https://github.com/mendezruth35" target="_blank">
+                           <i class="fa fa-github"></i>
+                           </a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a href="#" target="_blank">
+                           <i class="fa fa-linkedin"></i>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <div class="team-member">
+                     <img class="mx-auto rounded-circle" src="../static/img/team/2.jpg" alt="">
+                     <h4>Yu Lu</h4>
+                     <p class="text-muted">Developer</p>
+                     <ul class="list-inline social-buttons">
+                        <li class="list-inline-item">
+                           <a href="https://github.com/SuperYuLu" target="_blank">
+                           <i class="fa fa-github"></i>
+                           </a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a href="https://www.linkedin.com/in/yu-lu-12b123a6/" target="_blank">
+                           <i class="fa fa-linkedin"></i>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-8 mx-auto text-center">
+                  <p class="large text-muted">Learn more about us <a href="/about">here</a></p>
+               </div>
+            </div>
+         </div>
+      </section>
+      
+      <!-- Footer -->
+      <footer>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-4">
+                  <span class="copyright">Copyright &copy; NetTunes</span>
+               </div>
+               <div class="col-md-4">
+                  <ul class="list-inline social-buttons">
+                     <li class="list-inline-item">
+                        <a href="#">
+                        <i class="fa fa-twitter"></i>
+                        </a>
+                     </li>
+                     <li class="list-inline-item">
+                        <a href="#">
+                        <i class="fa fa-facebook"></i>
+                        </a>
+                     </li>
+                     <li class="list-inline-item">
+                        <a href="#">
+                        <i class="fa fa-linkedin"></i>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-md-4">
+                  <ul class="list-inline quicklinks">
+                     <li class="list-inline-item">
+                        <a href="#">Privacy Policy</a>
+                     </li>
+                     <li class="list-inline-item">
+                        <a href="#">Terms of Use</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- Bootstrap core JavaScript -->
+      <script src="../static/splash/jquery/jquery.min.js"></script>
+      <script src="../static/splash/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <!-- Plugin JavaScript -->
+      <script src="../static/splash/jquery-easing/jquery.easing.min.js"></script>
+      <!-- Contact form JavaScript -->
+      <script src="../static/splash/js/jqBootstrapValidation.js"></script>
+      <script src="../static/splash/js/contact_me.js"></script>
+      <!-- Custom scripts for this template -->
+      <script src="../static/splash/js/agency.js"></script>
+   </body>
+</html>
