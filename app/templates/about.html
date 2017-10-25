@@ -6,52 +6,127 @@
 
 {% block content %}
 <div>
-    <div>Title</div>
+    <div><h1>NetTunes Team</h1></div> <!-- make centered once in css -->
 
     <!-- First row of profiles -->
     <div class="row">
         <!-- First bio -->
         <div class="col-lg-4 col-sm-6">
             <!-- bio picture -->
-            <div></div>
-            <!-- bio info -->
             <div>
+            <img src = "../static/img/Juan.jpg" alt="Juan's Headshot" height = "250" width = "250">
+            </div>
+            <!-- bio info -->
+            <div class = "member-area">
+                <h2>Juan Trejo</h2>
+                <em><p id = "bio">Juan recites Pi to the 1000th digit in his spare time.</p> </em>
+                <p id = "member stats">
+                    Major Responsibilities: Team Leader<br>
+                    No. of Commits: <br>
+                    No. of Issues: <br>
+                    No. of Unit Tests: <br>
+                </p>
             </div>
         </div>
+        
         <div class="col-lg-4 col-sm-6">
-            <div></div>
-            <div></div>
+            <div>
+            <img src = "../static/img/Yu.jpg" alt="Yu's Headshot" height = "250" width = "250">
+            </div>
+            <div class = "member-area">
+                <h2>Yu Lu</h2>
+                <em><p id = "bio">Yu works for the FBI. </p></em>
+                <p id = "member stats">Major Responsibilities: CSS     Wizard <br>
+                    No. of Commits:<br>
+                    No. of Issues: <br>
+                    No. of Unit Tests:<br>
+                </p>
+            </div>
         </div>
+        
         <div class="col-lg-4 col-sm-6">
-            <div></div>
-            <div></div>
+            <div><img src = "../static/img/Ruth.jpg" alt="Ruth's Headshot" height = "250" width = "250"></div>
+            <div class = "member-area">
+                <h2>Ruth Mendez</h2>
+                <em><p>Ruth is a Sociology major who's working toward gaining the Elements of Computing Certificate. She is a self-employed face and body painter. Her career goal is to create her own animatronic props, from the software design that runs them to the prosthetic pieces applied to them.  </p></em>
+                <p id = "member stats">
+                    Major Responsibilities: About Page and Doodler<br>
+                    No. of Commits: <br>
+                    No. of Issues: <br>
+                    No. of Unit Tests: <br>
+                </p>
+            </div>
         </div>
     </div>
 
     <!-- Second row of profiles -->
     <div class="row">
         <div class="col-sm-6">
-            <div></div>
-            <div></div>
+            <div><img src = "../static/img/Chris.jpg" alt="Chris's Headshot" height = "250" width = "250"></div>
+            <div class = "member-area">
+                <h2>Chris Johnson</h2>
+                <em><p>I am UT alumni and a full time staff member in the Chemistry Department who, for some reason, spends my free time trying to learn computer science.  Instructor Fraij has shown incredible generosity by allowing me to audit this class and work on group projects.  Hopefully this class will be the last padding I need in my portfolio before I begin looking for jobs and internships in the spring.</p></em><br>
+                <p id = "member stats">
+                    Major Responsibilities: Resident Jinja "Expert" 
+                    No. of Commits: <br>
+                    No. of Issues: <br>
+                    No. of Unit Tests: <br>
+                </p>
+            </div>
         </div>
+        
         <div class="col-sm-6">
-            <div></div>
-            <div></div>
+            <div><img src = "../static/img/Rachel.jpg" alt="Rachel's Headshot" height = "250" width = "250"></div>
+            <div class = "member-area">
+                <h2>Rachel Tarrant</h2>
+                <em><p>I am a senior Biology major pursuing the Elements of Computing Certificate. I am also in the Polymathic Scholars Honors program, which allowed me to design my own field of study called “The Science of Food and the Psychology of Eating.” I will be writing a thesis in this field next semester. Beyond my studies, I work as an undergraduate writing consultant and the University Writing Center and as a “salon coordinator” at Jose Luis Salon.</p></em>
+                <p id = "member stats">
+                    Major Responsibilities: Wiki and Templates <br>
+                    No. of Commits: <br>
+                    No. of Issues: <br>
+                    No. of Unit Tests: <br>
+                </p>
+            </div>
+
         </div>
     </div>
 
     <!-- Random data row -->
+    <br>
     <div class="row">
         <div class="col-lg-4 col-sm-6">
-
+        <h2>Stats</h2>
+        Total No. of Commits: <br>
+        Total No. of Issues: <br>
+        Total No. of Unit Tests: <br>
+        
+        <a href="https://github.com/jtrejo13/cs329e-idb/issues"> GitHub Issue Tracker</a> <br>
+        <a href= "https://github.com/jtrejo13/cs329e-idb">GitHub Repo</a><br>
+        <a href="https://github.com/jtrejo13/cs329e-idb/wiki">GitHub Wiki</a><br>
         </div>
+        
         <div class="col-lg-4 col-sm-6">
-
+        <h2>Data</h2>
+        No data yet. 
         </div>
+        
         <div class="col-lg-4 col-sm-6">
-
+        <h2>Tools</h2>
+        <li>Collaboration
+            <ul><a href="https://slack.com/">Slack</a></ul>
+            <ul><a href="https://github.com/">Github</a></ul>     
+        </li>
+        <li>Front-end
+            <ul><a href="http://getbootstrap.com/">Boostrap</a></ul>
+            <ul><a href="http://flask.pocoo.org/">Flask</a></ul>
+        </li>
+        <li>Server/Hosting
+            <ul><a href="https://nc.me/">Namecheap</a></ul>
+            <ul><a href="https://cloud.google.com/">Google Cloud Platform</a></ul>
+        </li>
         </div>
     </div>
+    
 </div>
 {% endblock %}
 
