@@ -2,8 +2,7 @@ body{
     font-family: Geneva, Tahoma, sans-serif;
     font-size: 20px;
     overflow-x: hidden;
-    overflow-y: scroll;
-		   
+    overflow-y: scroll;	   
 }
 
 .page{
@@ -23,8 +22,7 @@ body{
 .content{
     width: 100vw;
     height: auto;
-    margin: 20% 0;
-    
+    margin: 20% 0;  
 }
 
 .footer{

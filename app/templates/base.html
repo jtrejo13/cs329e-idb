@@ -1,29 +1,49 @@
 <DOCTYPE html>
   <html lang="en">
     <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1"/>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>NetTunes - Your Go-To Music Database</title>
+      
+      <!-- Bootstrap core CSS -->
+      <link href="../static/splash/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
+      <!-- Custom fonts -->
+      <link href="../static/splash/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+      <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/style.css') }}"/>
-      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/navigation.css') }}"/>
-      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/footer.css') }}"/>
-      <title> nettunes </title>
+      <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/navigation.css') }}"/>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/footer.css') }}"/> -->
+      <!-- Custom styles for header -->
+      <link href="../static/css/navigation.css" rel="stylesheet">
+      <link href="../static/css/footer.css" rel="stylesheet">
     </head>
 
-    <body>
+    <body id="page-top">
       <div class='page'>
-	<div class='header'>
-	  {% block header %} {% endblock %}
-	</div>
+    	  {% block header %} {% endblock %}
 
-	<div class='content'>
-	  {% block content %} {% endblock %}
-	</div>
+    	<div class='content'>
+    	  {% block content %} {% endblock %}
+    	</div>
 
-	<div class='footer'>
-	  {% block footer %} {% endblock %}
-	</div>
+    	  {% block footer %} {% endblock %}
       </div>
+            <!-- Bootstrap core JavaScript -->
+      <script src="../static/splash/jquery/jquery.min.js"></script>
+      <script src="../static/splash/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <!-- Plugin JavaScript -->
+      <script src="../static/splash/jquery-easing/jquery.easing.min.js"></script>
+      <!-- Contact form JavaScript -->
+      <script src="../static/splash/js/jqBootstrapValidation.js"></script>
+      <script src="../static/splash/js/contact_me.js"></script>
+      <!-- Custom scripts for this template -->
+      <script src="../static/splash/js/agency.js"></script>
     </body>
   </html>
   

@@ -1,57 +1,32 @@
-.footer-container{
-    position:absolute;
-    width: 100vw;
-    height: auto;
-    color: #818181;
-    background: #E8E8E8;
-    font-size: 0.8em;
-}
+footer {
+  padding: 25px 0;
+  text-align: center; }
+  footer span.copyright {
+    font-size: 90%;
+    line-height: 40px;
+    text-transform: none;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  footer ul.quicklinks {
+    font-size: 90%;
+    line-height: 40px;
+    margin-bottom: 0;
+    text-transform: none;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
-
-footer
-p,
-li{
-    margin: 0 30%;
-}
-
-footer p{
-    display: inline-block;
-    font-weight: 600;
-    border-bottom: 0.2em solid silver;
-    margin-bottom: 1%;
-}
-footer li{
-    display: inline-block;
-}
-
-footer a, a:visited{
-    color: gray;
-}
-    
-    
-.site-map, .contributors{
-    box-sizing: border-box;
-    width: 50%;
-    height: auto;
-    float: left;
-    margin: 2% 0 0;
-}
-
-
-.site-info, .source-code{
-    box-sizing: border-box;
-    float: left;
-    width: 50%;
-    height: auto;
-    margin: 1% 0;
-}
-
-.source-code img{
-    display: inline;
-    width: 10%;
-    height: auto;
-}
-
-.source-code img:hover{
-    transform: scale(1.2);
-}
+ul.social-buttons {
+  margin-bottom: 0; }
+  ul.social-buttons li a {
+    font-size: 20px;
+    line-height: 40px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    color: white;
+    border-radius: 100%;
+    outline: none;
+    background-color: #212529; }
+    ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
+      background-color: #fed136; }
