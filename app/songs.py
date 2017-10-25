@@ -9,16 +9,15 @@
 # 
 # Created: Sat Oct 21 13:24:45 2017 (-0500)
 # Version: 
-# Last-Updated: Sun Oct 22 16:21:19 2017 (-0500)
+# Last-Updated: Tue Oct 24 20:12:08 2017 (-0500)
 #           By: yulu
-#     Update #: 27
+#     Update #: 28
 # 
 
 
 from app import app
 import codecs,json, os
-from flask import Flask, url_for
-from flask import render_template
+from flask import Flask, url_for, render_template
 
 @app.route('/songs')
 def songs():

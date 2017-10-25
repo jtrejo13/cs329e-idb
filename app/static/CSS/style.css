@@ -11,7 +11,6 @@ body{
     left: 0;
     width: 100vw;
     height: auto;
-    background: #96C6F4;
 }
 
 .header{
@@ -22,7 +21,17 @@ body{
 .content{
     width: 100vw;
     height: auto;
+<<<<<<< HEAD
     margin: 20% 0;  
+=======
+    margin: 15% 0;
+}
+
+.content h1{
+    display: block;
+    width: 100%;
+    margin: 5% 5% 10%;
+>>>>>>> table-improve
 }
 
 .footer{
