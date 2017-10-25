@@ -22,8 +22,13 @@ body{
 .content{
     width: 100vw;
     height: auto;
-    margin: 20% 0;
-    
+    margin: 15% 0;
+}
+
+.content h1{
+    display: block;
+    width: 100%;
+    margin: 5% 5% 10%;
 }
 
 .footer{
