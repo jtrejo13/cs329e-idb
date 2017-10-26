@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block head %}
+{% include "head.html" %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'CSS/subpage-artists.css') }}" >
+{% endblock %}
+
+{% block header %}
+{% include "navigation.html"%}
+{% endblock %}
+
+{% block content %}
+<h1> Nine Inch Nails </h1>
+<div class="image-area"><img id="album-cover" src="https://www.rocksbackpages.com/public/img/artists/10807.jpg" alt="NIN"></div>
+
+<div class="data-area">
+  <p class="data">Start Date: 1988</p>
+  <p class="data"># of members: 1</p>
+  <p class="data"># of albums: 9</p>
+  <p class="data">From: Cleveland, Ohio</p>
+</div>
+
+<div class="large-area">
+  <p id="band-name">Nine Inch Nails</p>
+  <p id="album-title">Featured Album: Pretty Hate Machine<!-- ADD LINK --></p>
+  <p id="song-link">Featured Song: Head Like a Hole<!-- ADD LINK --></p>
+  <br>
+  <!-- Might be cool to change the discography to pictures of the album covers arranged with bootstrap -->
+  <h1>Discography</h1>
+  <table class="list">
+    <tr>
+      <th>Album</th>
+      <th>Year</th>
+    </tr>
+    <tr>
+      <td>Pretty Hate Machine</td>
+      <td>1989</td>
+    </tr>
+    <tr>
+      <td>Broken</td>
+      <td>1992</td>
+    </tr>
+    <tr>
+      <td>The Downward Spiral</td>
+      <td>1994</td>
+    </tr>
+    <tr>
+      <td>The Fragile</td>
+      <td>1999</td>
+    </tr>
+    <tr>
+      <td>With Teeth</td>
+      <td>2005</td>
+    </tr>
+    <tr>
+      <td>Year Zero</td>
+      <td>2007</td>
+    </tr>
+    <tr>
+      <td>Ghosts I-IV</td>
+      <td>2008</td>
+    </tr>
+    <tr>
+      <td>The Slip</td>
+      <td>2008</td>
+    </tr>
+    <tr>
+      <td>Hesitation Marks</td>
+      <td>2013</td>
+    </tr>
+  </table>
+</div>
+
+{% endblock %}
+
+{% block footer %}
+{% include "footer.html" %}
+{% endblock %}

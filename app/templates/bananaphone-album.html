@@ -1,7 +1,12 @@
 {% extends "base.html" %}
 
+{% block head %}
+{% include "head.html" %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'CSS/subpage-albums.css') }}" >
+{% endblock %}
+
 {% block header %}
-{% include "header.html"%}
+{% include "navigation.html"%}
 {% endblock %}
 
 {% block content %}

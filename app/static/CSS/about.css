@@ -1,0 +1,29 @@
+
+.content{
+    width: 80vw;
+    height: auto;
+    margin: 5% 10% 0%;
+}
+
+.content h1{
+    display: block;
+    width: 100%;
+    margin: 10% 1% 5%;
+}
+
+.member-area{
+    margin: 10% 0;
+    width: 25vw;
+}
+
+
+.row img{
+    width: 15vw;
+    height: auto;
+}
+
+.stats{
+    font-size: 0.7em;
+}
+
+
