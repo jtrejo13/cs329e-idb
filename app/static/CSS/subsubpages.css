@@ -1,0 +1,39 @@
+.content{
+    width: 80vw;
+    height: auto;
+    margin: auto;
+
+}
+
+.content h1{
+    display: block;
+    width: 100%;
+    margin: 5% 0;
+}
+
+.image-area{
+    float: left;
+    margin: 0 0;
+}
+
+.data-area{
+    clear: left;
+    line-height: 1em;
+}
+
+
+.large-area p{
+    display: block;
+    width: 50%
+}
+
+.large-area iframe{
+    position: absolute;
+    top: 25%;
+    right: 20%;
+    width: 40vw;
+    height: 25vw;
+    
+}
+
+
