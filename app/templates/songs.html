@@ -31,7 +31,11 @@
     </div>
   </td>
   {% elif key == 'NAME'  %}
-  <td> <a alt={{ name[key] }} href="/{{'database/'+ ''.join(name[key].split()).lower() + '-song' }}"> {{ name[key] }} </a></td> 
+  <td> <a alt={{ name[key] }} href="/{{'database/'+ ''.join(name[key].split()).lower() + '-song' }}"> {{ name[key] }} </a></td>
+  {% elif key == 'BAND' %}
+  <td> <a alt={{ name[key] }} href="/{{'database/'+ ''.join(name[key].split()).lower() + '-band' }}"> {{ name[key] }} </a></td>
+  {% elif key == 'ALBUM' %}
+  <td> <a alt={{ name[key] }} href="/{{'database/'+ ''.join(name[key].split()).lower() + '-album' }}"> {{ name[key] }} </a></td>
   {% else %}
   <td> {{ name[key] }} </td>
   {% endif %}
