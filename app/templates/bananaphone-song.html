@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block header %}
+{% include "navigation.html"%}
+{% endblock %}
+
+{% block content %}
+<div class="image-area"><img id="album-cover" src="https://upload.wikimedia.org/wikipedia/en/7/7c/Bananaphone.jpg" alt="Bananaphone"></div>
+
+<div class="data-area">
+  <p class="data">Released: 1994</p>
+  <p class="data">Bananaphone</p>
+  <p class="data">Children's</p>
+  <p class="data">Duration 3:12</p>
+</div>
+
+<div class="large-area">
+  <p id="song-title">Bananaphone</p>
+  <p id="band-name">Raffi</p>
+  <p id="lyrics-link"><a href="https://genius.com/Raffi-bananaphone-lyrics">Song Lyrics</a></p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/dIiZ3vvZ78s" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
+{% endblock %}
+
+{% block footer %}
+{% include "footer.html" %}
+{% endblock %}
