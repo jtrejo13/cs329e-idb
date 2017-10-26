@@ -1,5 +1,11 @@
 {% extends "base.html" %}
 
+{% block head %}
+{% include "head.html" %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/about.css') }}"/>
+<title> nettunes-about </title>
+{% endblock %}
+
 {% block header %}
 {% include "navigation.html" %}
 {% endblock %}
@@ -35,8 +41,8 @@
             </div>
             <div class = "member-area">
                 <h2>Yu Lu</h2>
-                <em><p id = "bio">Yu works for the FBI. </p></em>
-                <p id = "member stats">Major Responsibilities: CSS     Wizard <br>
+                <em><p id = "bio">I’m a graduate student in Dept. of physics pursuing Ph.D. degree. While working on physics experiment to explore the unknowns, computer science is one of my biggest interest. Programming is a useful tool in my daily experiment data analysis which always simplifies a lot of work into a simple “click”. Automation of IoT devices and web development are the new islands that I’m exploring. </p></em>
+                <p id = "member stats">Major Responsibilities: CSS and flask table <br>
                     No. of Commits:<br>
                     No. of Issues: <br>
                     No. of Unit Tests:<br>
