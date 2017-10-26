@@ -1,0 +1,40 @@
+.content{
+    width: 80vw;
+    height: auto;
+    margin: auto;
+
+}
+
+.content h1{
+    display: block;
+    width: 100%;
+    margin: 10% 0 0;
+}
+
+.image-area{
+    float: left;
+    margin: 10% 0 0;
+}
+
+.image-area img{
+    width: 20vw;
+    height: auto;
+}
+
+.data-area{
+    clear: left;
+    line-height: 1em;
+}
+
+
+.large-area h1{
+    display: none;
+}
+
+.list{
+    position:absolute;
+    right: 10%;
+    top: 40%;
+    width: 30vw;
+    height: auto;
+}

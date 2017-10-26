@@ -16,11 +16,14 @@
     width: 25vw;
 }
 
-.stats{
-    position:absolute;
-    font-size: 0.6em;
-    top: 0;
-    left: 50%;
-    margin: 0 5%;
+
+.row img{
+    width: 15vw;
+    height: auto;
 }
+
+.stats{
+    font-size: 0.7em;
+}
+
 

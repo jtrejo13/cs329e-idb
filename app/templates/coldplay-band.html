@@ -2,6 +2,7 @@
 
 {% block head %}
 {% include "head.html" %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'CSS/subpage-artists.css') }}" >
 {% endblock %}
 
 {% block header %}
@@ -9,6 +10,7 @@
 {% endblock %}
 
 {% block content %}
+<h1> Coldplay </h1>
 <div class="image-area"><img id="album-cover" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Coldplay_Viva_La_Vida_Tour_in_Hannover_August_25th_2009.jpg/375px-Coldplay_Viva_La_Vida_Tour_in_Hannover_August_25th_2009.jpg" alt="Coldplay"></div>
 
 <div class="data-area">
