@@ -1,8 +1,7 @@
-coverage==4.4.1
-decorator==4.1.2
+click==6.7
 Flask==0.12.2
-Flask-WTF==0.14.2
+itsdangerous==0.24
 Jinja2==2.9.6
-packaging==16.8
-pandas==0.19.2
--e git+https://github.com/pwexler/xml2py.git@4c6973f9647454d65eafb413d65b87b4d06bd81e#egg=xml2py
+MarkupSafe==1.0
+Werkzeug==0.12.2
+gunicorn==19.7.1

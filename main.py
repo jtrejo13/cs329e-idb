@@ -1,4 +1,4 @@
-# run.py --- 
+# main.py --- 
 # 
 # Filename: run.py
 # Description: 
@@ -9,11 +9,11 @@
 # 
 # Created: Sat Oct 21 12:50:32 2017 (-0500)
 # Version: 
-# Last-Updated: Sat Oct 21 12:51:04 2017 (-0500)
+# Last-Updated: Fri Oct 27 01:19:34 2017 (-0500)
 #           By: yulu
-#     Update #: 1
+#     Update #: 3
 #
 
 from app import app
-app.run(debug = True)
-
+if __name__=='__main__':
+    app.run(host="127.0.0.1", port=8000, debug=True)
