@@ -27,7 +27,7 @@ python run.py
 
 5. In your web browser, enter the following address:
 ```
-http://localhost:5000
+http://localhost:8000
 ```
 
 ## To do  
