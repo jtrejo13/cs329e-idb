@@ -34,7 +34,7 @@ def load_json(filename):
 
 
 def create_songs():
-    book = load_json('books.json')
+    book = load_json('itunes_songs.json')
 
     for oneBook in book['Books']:
         title = oneBook['title']
