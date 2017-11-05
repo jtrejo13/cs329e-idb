@@ -3,7 +3,7 @@ import json, logging
 # import the following dependencies from SQLAlchmey
 # and the empty database we created into our environment
 from sqlalchemy.orm import sessionmaker
-from models import Artists, Albums, Songs, engine
+from models import Artists, Albums, Songs, engine, Base
 
 # bind the engine to the base class. This makes the connection
 # between our class definitions and the corresponding tables
@@ -34,17 +34,23 @@ def load_json(filename):
 
 
 def create_songs():
-    book = load_json('itunes_songs.json')
+    song_dic = load_json('itunes_songs.json')
 
-    for oneBook in book['Books']:
-        title = oneBook['title']
-        id = oneBook['id']
+    for one_song in song_dic:
+        name = one_song["song"]
+        artist = one_song["artist"]
+        album = one_song["album"]
+        rank = one_song["rank"]
+        song_link = one_song["albumLink"]
+        genre = one_song["genre"]
+        release_date = one_song["release_time"]
+        duration = one_song["duration"]
 
-        newBook = Book(title=title, id=id)
+        newSong = Songs(name = name, artist = artist, album = album, rank = rank, song_link = song_link, genre = genre, release_date = release_date, duration = duration)
         # After I create the book, I can then add it to my session.
-        session.add(newBook)
+        session.add(newSong)
         # commit the session to my DB.
         session.commit()
 
 
-create_books()
+create_songs()
