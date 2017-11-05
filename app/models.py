@@ -1,6 +1,6 @@
 import sys
 import os
-from sqlalchemy import Column, ForeignKey, Integer, String
+from sqlalchemy import Column, ForeignKey, Integer, String, Date, Text
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 from sqlalchemy import create_engine
@@ -12,11 +12,29 @@ from sqlalchemy import create_engine
 Base = declarative_base()
 
 
-class Artist(Base):
+class Artists(Base):
     __tablename__ = 'artists'
 
-    title = Column(String(80), nullable=False)
-    id = Column(Integer, primary_key=True)
+    name = Column(String(80), primary_key=True, nullable=False)
+    no_members = Column(Integer)
+    start_date = Column(Date)
+    origin = Column(String(80))
+    no_albums = Column(Integer)
+
+class Albums(Base):
+    __tablename__ = 'albums'
+
+    name = Column(String(80), primary_key=True, nullable=False)
+
+class Songs(Base):
+    __tablename__ = 'songs'
+
+    name = Column(String(80), primary_key=True, nullable=False)
+    artist = Column(String(80))
+    rank = Column(Integer)
+    song_link = Column(Text)
+    genre = Column(String(20))
+    release_date = Column(Date)
 
 
 SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI', 'postgresql://postgres:asd123@localhost/bookdb')
