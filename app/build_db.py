@@ -33,7 +33,7 @@ def load_json(filename):
     return jsn
 
 
-def create_books():
+def create_songs():
     book = load_json('books.json')
 
     for oneBook in book['Books']:

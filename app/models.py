@@ -30,11 +30,13 @@ class Songs(Base):
     __tablename__ = 'songs'
 
     name = Column(String(80), primary_key=True, nullable=False)
-    artist = Column(String(80))
+    artist = Column(String(50))
+    album = Column(String(50))
     rank = Column(Integer)
-    song_link = Column(Text)
+    song_link = Column(String)
     genre = Column(String(20))
-    release_date = Column(Date)
+    release_date = Column(String)
+    duration = Column(String)
 
 
 SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI', 'postgresql://postgres:asd123@localhost/bookdb')
