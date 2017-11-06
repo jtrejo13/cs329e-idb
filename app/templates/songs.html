@@ -10,6 +10,31 @@
 {% endblock %}
 
 {% block content %}
+<h1> Songs </h1><br/>
+<table class="tablesorter">
+  <thead>
+    <tr>
+      {% for key in tableTitles %}
+      <th> {{ key }} </th>
+      {% endfor %}
+    </tr>
+  </thead>
+{% for key in songs %}
+<tr> 
+    {% for column in tableTitles %}
+    <td>
+        {{key[column]}}
+    </td>
+    {% endfor %}
+</tr>
+{% endfor %}
+</table>
+<script src="{{ url_for('static', filename="JavaScript/tableConfig.js") }}"></script>   
+
+        
+        
+      
+<!-->
 <h1> Songs </h1></br>
 <table class="tablesorter">
   <thead>
@@ -49,7 +74,8 @@
 {% endfor %}
 </tbody>
 </table>
-<script src="{{ url_for('static', filename="JavaScript/tableConfig.js") }}"></script>
+
+<-->
 {% endblock %}
 
 {% block footer %}
