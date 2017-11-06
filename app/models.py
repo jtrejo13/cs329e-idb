@@ -39,15 +39,7 @@ class Songs(Base):
     duration = Column(String)
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI', 'postgresql://postgres:pass123@localhost/TestDB')
-=======
-SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI', 'postgresql://postgres:postgres@localhost/nettunes')
->>>>>>> b1c32df594b8235f2d08e2b404908689eea834c3
-=======
-SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI', 'postgresql://postgres:postgres@localhost/nettunes')
->>>>>>> b1c32df594b8235f2d08e2b404908689eea834c3
+SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI', 'postgresql://postgres:12345@localhost/nettunes')
 engine = create_engine(SQLALCHEMY_DATABASE_URI)
 
 Base.metadata.drop_all(engine)

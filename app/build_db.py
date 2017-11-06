@@ -34,7 +34,7 @@ def load_json(filename):
 
 
 def create_songs():
-    song_dic = load_json('itunes_songs.json')
+    song_dic = load_json('app/static/json/itunes_songs.json')
 
     for one_song in song_dic:
         name = one_song["song"]
