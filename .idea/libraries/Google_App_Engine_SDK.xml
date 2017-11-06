@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="Google App Engine SDK" type="python">
     <CLASSES>
-      <root url="file://$APPLICATION_HOME_DIR$/bin" />
+      <root url="file://$USER_HOME$" />
       <root url="file:///lib/recovery-mode" />
       <root url="file:///lib/modprobe.d" />
       <root url="file:///lib/resolvconf" />

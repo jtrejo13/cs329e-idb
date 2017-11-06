@@ -3,7 +3,7 @@ import json, logging
 # import the following dependencies from SQLAlchmey
 # and the empty database we created into our environment
 from sqlalchemy.orm import sessionmaker
-from models import Artists, Albums, Songs, engine, Base
+from app.models import Artists, Albums, Songs, engine, Base
 
 # bind the engine to the base class. This makes the connection
 # between our class definitions and the corresponding tables
