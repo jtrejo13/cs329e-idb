@@ -16,10 +16,14 @@ class Artists(Base):
     __tablename__ = 'artists'
 
     name = Column(String(80), primary_key=True, nullable=False)
-    no_members = Column(Integer)
-    start_date = Column(Date)
+    artist_link = Column(String)
+    pic_link = Column(String)
     origin = Column(String(80))
-    no_albums = Column(Integer)
+    genre = Column(String(80))
+    start_date = Column(String)
+    latest_release = Column(String)
+    bio = Column(Text) 
+    
 
 class Albums(Base):
     __tablename__ = 'albums'
