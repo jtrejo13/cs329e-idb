@@ -22,19 +22,10 @@ pip install -r requirements.txt
 ```
 4. Run the application:
 ```
-python run.py
+python main.py
 ```
 
 5. In your web browser, enter the following address:
 ```
 http://localhost:8000
 ```
-
-## To do  
-+ ~~Write basic flask web frame work~~
-+ Python crawling to find daily top rated songs, auto generate all links and pics of artist 
-+ Add data base from the crawling 
-+ CSS3 embed
-+ js for interactive response
-+ make the whole webpage responsive 
-+ host on GCP
