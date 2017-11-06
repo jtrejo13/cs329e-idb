@@ -20,6 +20,28 @@
       {% endfor %}
     </tr>
   </thead>
+{% for key in albums %}
+<tr> 
+    {% for column in tableTitles %}
+    
+    <td>
+        {{key[column]}}
+    </td>
+    
+    {% endfor %}
+</tr>
+{% endfor %}
+</table>
+<script src="{{ url_for('static', filename="JavaScript/tableConfig.js") }}"></script> 
+
+<!-- <table class="tablesorter">
+  <thead>
+    <tr>
+      {% for key in tableTitles %}
+      <th> {{ key }} </th>
+      {% endfor %}
+    </tr>
+  </thead>
   <tbody>
     {% for name in data %}
     <tr>
@@ -37,7 +59,7 @@
   </tbody>
 </table>
 <script src="{{ url_for('static', filename="JavaScript/tableConfig.js") }}"></script>
-{% endblock %}
+{% endblock %} -->
 
 {% block footer %}
 {% include "footer.html" %}

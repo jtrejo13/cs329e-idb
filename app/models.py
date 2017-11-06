@@ -29,6 +29,16 @@ class Albums(Base):
     __tablename__ = 'albums'
 
     name = Column(String(80), primary_key=True, nullable=False)
+    album_link = Column(String)
+    pic_link = Column(String)
+    release_date = Column(String)
+    info = Column(Text)
+    artist = Column(String)
+    genre = Column(String)
+    num_tracks = Column(Integer)
+    track_list = Column(Text)
+
+
 
 class Songs(Base):
     __tablename__ = 'songs'

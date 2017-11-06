@@ -71,5 +71,26 @@ def create_artists():
         # commit the session to my DB.
         session.commit()
 
+def create_albums():
+    album_dic = load_json('app/static/json/itunes_albums.json')
+
+    for one_album in album_dic:
+        name = one_album["album"]
+        album_link = one_album["album_link"]
+        pic_link = one_album["album_img_link"]
+        release_date = one_album["release_time"]
+        info = one_album["intro"]
+        artist = one_album["artist"]
+        genre = one_album["genre"]
+        num_tracks = one_album["num_of_songs"]
+        track_list = one_album["track"]
+
+        newAlbum = Albums(name = name, album_link = album_link, pic_link = pic_link, release_date = release_date, info = info, artist = artist, genre = genre, num_tracks = num_tracks, track_list = track_list)
+        # After I create the book, I can then add it to my session.
+        session.add(newAlbum)
+        # commit the session to my DB.
+        session.commit()
+
 create_songs()
 create_artists()
+create_albums()
