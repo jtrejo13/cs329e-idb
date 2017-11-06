@@ -30,16 +30,24 @@ class Songs(Base):
     __tablename__ = 'songs'
 
     name = Column(String(80), primary_key=True, nullable=False)
-    artist = Column(String(50))
-    album = Column(String(50))
-    rank = Column(Integer)
+    artist = Column(String)
+    album = Column(String)
+    rank = Column(String)
     song_link = Column(String)
     genre = Column(String(20))
     release_date = Column(String)
     duration = Column(String)
 
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI', 'postgresql://postgres:pass123@localhost/TestDB')
+=======
 SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI', 'postgresql://postgres:postgres@localhost/nettunes')
+>>>>>>> b1c32df594b8235f2d08e2b404908689eea834c3
+=======
+SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI', 'postgresql://postgres:postgres@localhost/nettunes')
+>>>>>>> b1c32df594b8235f2d08e2b404908689eea834c3
 engine = create_engine(SQLALCHEMY_DATABASE_URI)
 
 Base.metadata.drop_all(engine)
