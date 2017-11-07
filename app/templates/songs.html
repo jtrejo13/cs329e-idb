@@ -14,8 +14,8 @@
 <table class="tablesorter">
   <thead>
     <tr>
-      {% for key in tableTitles %}
-      <th> {{ key }} </th>
+      {% for column in tableTitles %}
+      <th> {{ column }} </th>
       {% endfor %}
     </tr>
   </thead>
@@ -23,10 +23,22 @@
 <tr> 
     {% for column in tableTitles %}
     
+    {% if column == "name" %}
+    <td> <a alt={{ key[column] }} href="/{{'database/song/'+ ''.join(key[column].split()).lower() }}"> {{ key[column] }} </a></td>
+    
+    {% elif column == 'artist' %}
+    <td> <a alt={{ key[column] }} href="/{{'database/artist/'+ ''.join(key[column].split()).lower() }}"> {{ key[column] }} </a></td>
+    
+    {% elif column == 'album' %}
+    <td> <a alt={{ key[column] }} href="/{{'database/album/'+ ''.join(key[column].split()).lower() }}"> {{ key[column] }} </a></td>
+
+    {% else %}
     <td>
         {{key[column]}}
     </td>
     
+    {% endif %}
+
     {% endfor %}
 </tr>
 {% endfor %}

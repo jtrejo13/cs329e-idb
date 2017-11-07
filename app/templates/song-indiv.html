@@ -10,27 +10,30 @@
 {% endblock %}
 
 {% block content %}
-<h1> {{key[name]}} </h1>
-<!-- <div class="image-area"><img id="album-cover" src="https://upload.wikimedia.org/wikipedia/en/6/6e/Coldplay_-_A_Rush_of_Blood_to_the_Head.jpg" alt={{key[name]}}></div> -->
+<!-- <p> {{title}} </p> -->
+{% for key in songs %}
+  {% if ''.join(key['name'].split()).lower() == title %}
+    <h1> {{key[name]}} </h1>
+    <div class="data-area">
+      <p class="data">Released: {{key['release_date']}}</p>
+      <p class="data">Album: {{key['album']}}</p>
+      <p class="data">Genre: {{key['genre']}}</p>
+      <p class="data">Duration: {{key['duration']}}</p>
+      <p class="data">Rank: {{key['rank']}}</p>
+    </div>
 
-<div class="data-area">
-  <p class="data">Released: {{key[release_date]}}</p>
-  <p class="data">{{key[album]}}</p>
-  <p class="data">{{key[genre]}}</p>
-  <p class="data">Duration {{key[duration]}}</p>
-  <p class="data">Rank {{key[rank]}}</p>
-</div>
-
-<div class="large-area">
-  <p id="song-title">{{key[name]}}</p>
-  <p id="band-name">{{key[artist]}}</p>
-  <p id="itunes-link"><a href="{{key[song_link]}}">iTunes Link</a></p>
-  <!-- <p id="lyrics-link"><a href="https://genius.com/Coldplay-god-put-a-smile-upon-your-face-lyrics">Song Lyrics</a></p>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/qhIVgSoJVRc" frameborder="0" allowfullscreen></iframe> -->
-</div>
-
+    <div class="large-area">
+      <p id="song-title">{{key['name']}}</p>
+      <p id="band-name">{{key['artist']}}</p>
+      <p id="itunes-link"><a href="{{key['song_link']}}">iTunes Link to Album</a></p>
+      <!-- <p id="lyrics-link"><a href="https://genius.com/Coldplay-god-put-a-smile-upon-your-face-lyrics">Song Lyrics</a></p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/qhIVgSoJVRc" frameborder="0" allowfullscreen></iframe> -->
+    </div>
+  {% endif %}
+{% endfor %}
 
 {% endblock %}
+
 
 {% block footer %}
 {% include "footer.html" %}

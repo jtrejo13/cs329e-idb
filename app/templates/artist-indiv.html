@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block head %}
+{% include "head.html" %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'CSS/subpage-artists.css') }}" >
+{% endblock %}
+
+{% block header %}
+{% include "navigation.html"%}
+{% endblock %}
+
+{% block content %}
+{% for key in artists %}
+  {% if ''.join(key['name'].split()).lower() == artist %}
+    <h1> {{key[name]}} </h1>
+    <div class="image-area"><img id="album-cover" src={{key[pic_link]}} alt="NIN"></div>    
+
+    <div class="data-area">
+      <p class="data">Start Date: {{key['start_date']}}</p>
+      <p class="data">From: {{key['origin']}}</p>
+      <p class="data">Genre: {{key['genre']}}</p>
+      <p class="data"></p>
+    </div>
+
+    <div class="large-area">
+      <p id="band-name">{{key['name']}}</p>
+      <p>Latest release: {{key['latest_release']}}</p>
+      <br/>
+      <h2>Bio</h2>
+      <p>{{key['bio']}}</p>
+      <!-- <p id="album-title">Featured Album: Pretty Hate Machine</p>
+      <p id="song-link">Featured Song: Head Like a Hole</p>
+      <br> -->
+    </div>
+  {% endif %}
+{% endfor %}
+
+{% endblock %}
+
+{% block footer %}
+{% include "footer.html" %}
+{% endblock %}
