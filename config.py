@@ -2,6 +2,8 @@ import os
 
 WTF_CSRF_ENABLED = False
 
+DATA_BACKEND = 'cloudsql'
+
 PROJECT_ID = 'testproject-183322'
 
 #CLOUD SQL
