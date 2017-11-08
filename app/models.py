@@ -1,6 +1,7 @@
 import sys
 import os
-from sqlalchemy import Column, ForeignKey, Integer, String, Date, Text
+from sqlalchemy import Column, ForeignKey, Integer, String, Date, Text, Text
+from sqlalchemy.dialects import postgresql
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 from sqlalchemy import create_engine
@@ -36,7 +37,7 @@ class Albums(Base):
     artist = Column(String)
     genre = Column(String)
     num_tracks = Column(Integer)
-    track_list = Column(Text)
+    track_list = Column(postgresql.ARRAY(Text, dimensions=2))
 
 
 
