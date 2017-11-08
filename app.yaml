@@ -13,10 +13,10 @@ env_variables:
     # Replace user, password, database, and instance connection name with the values obtained
     # when configuring your Cloud SQL instance.
     SQLALCHEMY_DATABASE_URI: >-
-      postgresql+psycopg2://postgres:nettunes2017@/nettunes-lib?host=/cloudsql/testproject-183322:us-central1:nettunes-lib
+      postgresql+psycopg2://postgres:nettunes2017@/nettuneslib?host=/cloudsql/testproject-183322:us-central1:nettuneslib
 beta_settings:
-    cloud_sql_instances: testproject-183322:us-central1:nettunes-lib
+    cloud_sql_instances: testproject-183322:us-central1:nettuneslib
 
 handlers:
 - url: /.*
-  script: app.app
+  script: main.app
