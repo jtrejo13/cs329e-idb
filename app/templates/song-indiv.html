@@ -2,19 +2,25 @@
 
 {% block head %}
 {% include "head.html" %}
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'CSS/subpage-songs.css') }}" >
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'CSS/song-indiv.css') }}" > 
 {% endblock %}
 
 {% block header %}
-{% include "navigation.html"%}
+{% include "navigation.html" %}
 {% endblock %}
 
 {% block content %}
 
 {% for song_dic in songs %}
-  {% if ''.join(song_dic['name'].split()).lower() == title %}
-    <h1> {{ song_dic['name'] }}</h1>
-    <div class="image-area"><img id="album-cover" src="{{ song_dic['pic_link'] }}" alt="{{ album }}"></div>
+{% if ''.join(song_dic['name'].split()).lower() == title %}
+<div class="title-area">
+<h1> {{ song_dic['name'] }}</h1>
+<p id="band-name">by: <a href="/{{'database/artist/'+ ''.join(song_dic['artist'].split()).lower() }}">{{ song_dic['artist'] }}</a></p>
+<p id="itunes-link"><a href="{{song_dic['song_link']}}" target="_blank">iTunes Link to Album</a></p>
+</div>
+
+<div class="divider">
+</div>
 
     <div class="data-area">
       <p class="data">Released: {{ song_dic['release_date'] }}</p>
@@ -22,12 +28,8 @@
       <p class="data">Genre: {{ song_dic['genre'] }}</p>
       <p class="data">Duration: {{song_dic['duration']}}</p>
       <p class="data">Rank: {{song_dic['rank']}}</p>
-    </div>
-
-    <div class="large-area">
       <p id="song-title">{{ song_dic['name'] }}</p>
-      <p id="band-name">by: <a href="/{{'database/artist/'+ ''.join(song_dic['artist'].split()).lower() }}">{{ song_dic['artist'] }}</a></p>
-      <p id="itunes-link"><a href="{{song_dic['song_link']}}" target="_blank">iTunes Link to Album</a></p>
+      
       <!-- <p id="lyrics-link"><a href="https://genius.com/Coldplay-god-put-a-smile-upon-your-face-lyrics">Song Lyrics</a></p>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/qhIVgSoJVRc" frameborder="0" allowfullscreen></iframe> -->
     </div>
