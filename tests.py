@@ -11,6 +11,10 @@ from app.models import *
 
 
 class tests(TestCase):
+
+# -----------
+# Test Artists
+# -----------
 	
 	# Test that table "Artists" is writable
 	def test_write_artists(self):
@@ -114,6 +118,23 @@ class tests(TestCase):
 	
 		new_query = session.query(Artists).filter(Artists.name == 'ARTISTDEL').first()
 		self.assertTrue(new_query is None)
+
+
+# -----------
+# Test Albums
+# -----------
+
+	# Test that table "Albums" is writable
+	def test_write_albums(self):
+		query = session.query(Albums).all()
+		startSize = len(query)
+
+		session.add(Albums(name = 'ALBUM', genre = 'GENRE'))
+		session.commit()
+		query = session.query(Albums).all()
+		endSize = len(query)
+		
+		self.assertEqual(startSize + 1, endSize)
 
 
 if __name__ == "__main__":
