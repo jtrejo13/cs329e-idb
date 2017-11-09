@@ -142,9 +142,8 @@ class tests(TestCase):
 
 
 if __name__ == "__main__":
-	engine = create_engine('postgresql+psycopg2://postgres@localhost:5432/travis')
-	Session = sessionmaker(bind=engine)
+	Session = sessionmaker(bind=app.models.engine)
 	session = Session()
-	Base.metadata.drop_all(engine)
-	Base.metadata.create_all(engine)
+	Base.metadata.drop_all(app.models.engine)
+	Base.metadata.create_all(app.models.engine)
 	main()
