@@ -226,7 +226,39 @@ class tests(TestCase):
 	
 		new_query = session.query(Albums).filter(Albums.name == 'ARTISTDEL').first()
 		self.assertTrue(new_query is None)
+
+
+# -----------
+# Test Songs
+# -----------
+
+	# Test that table "Songs" is writable
+	def test_write_songs(self):
+		query = session.query(Songs).all()
+		startSize = len(query)
+
+		session.add(Songs(name = 'SONG', genre = 'GENRE'))
+		session.commit()
+		query = session.query(Songs).all()
+		endSize = len(query)
 		
+		self.assertEqual(startSize + 1, endSize)
+
+
+	# Test that table "Songs" can be written multiple queries 
+	def test_write_songs_multiple(self):
+		query = session.query(Songs).all()
+		startSize = len(query)
+
+		session.add(Songs(name = 'SONG_MULTIPLE_1', genre = 'GENRE'))
+		session.add(Songs(name = 'SONG_MULTIPLE_2', genre = 'GENRE'))
+		session.commit()
+		query = session.query(Songs).all()
+		endSize = len(query)
+
+		self.assertEqual(startSize + 2, endSize)
+
+
 
 if __name__ == "__main__":
 	Base.metadata.bind = engine
