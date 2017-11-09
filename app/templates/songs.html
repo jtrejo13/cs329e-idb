@@ -3,6 +3,9 @@
 {% block head %}
 {% include "head.html" %}
 <title> nettunes-songs </title>
+<script src="{{ url_for('static', filename="JavaScript/tableConfig.js") }}"></script>
+<script src="{{ url_for('static', filename="JavaScript/jquery.tablesorter.pager.js") }}"></script>   
+
 {% endblock %}
 
 {% block header %}
@@ -11,6 +14,29 @@
 
 {% block content %}
 <h1> Songs </h1><br/>
+
+<!-- pager -->
+<div id="pager" class="pager">
+  <form>
+    <img src="http://mottie.github.com/tablesorter/addons/pager/icons/first.png" class="first"/> 
+    <img src="http://mottie.github.com/tablesorter/addons/pager/icons/prev.png" class="prev"/> 
+    <span class="pagedisplay"></span> 
+    <img src="http://mottie.github.com/tablesorter/addons/pager/icons/next.png" class="next"/> 
+    <img src="http://mottie.github.com/tablesorter/addons/pager/icons/last.png" class="last"/> 
+    <select class="pagesize">
+      <option value="10">10</option>
+      <option value="20">20</option>
+      <option value="30">30</option>
+      <option value="40">40</option>
+      <option value="50">50</option>
+      <option value="60">60</option>
+      <option value="70">70</option>
+      <option value="all">All Rows</option>
+    </select>
+  </form>
+</div>
+
+
 <table class="tablesorter">
   <thead>
     <tr>
@@ -43,9 +69,8 @@
 </tr>
 {% endfor %}
 </table>
-<script src="{{ url_for('static', filename="JavaScript/tableConfig.js") }}"></script>   
 
-        
+
         
       
 <!--
