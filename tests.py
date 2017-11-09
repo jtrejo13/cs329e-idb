@@ -21,12 +21,15 @@ class tests(TestCase):
 		query = session.query(Artists).all()
 		startSize = len(query)
 
-		session.add(Artists(name = 'ARTIST', genre = 'GENRE'))
+		session.add(Artists(name = 'ARTISTTEST', genre = 'GENRE'))
 		session.commit()
 		query = session.query(Artists).all()
 		endSize = len(query)
 		
 		self.assertEqual(startSize + 1, endSize)
+
+		session.query(Artists).filter_by(name = 'ARTISTTEST').delete()
+		session.commit()
 
 
 	# Test that table "Artists" can be written multiple queries 
@@ -42,6 +45,10 @@ class tests(TestCase):
 
 		self.assertEqual(startSize + 2, endSize)
 
+		session.query(Artists).filter_by(name = 'ARTIST_MULTIPLE_1').delete()
+		session.query(Artists).filter_by(name = 'ARTIST_MULTIPLE_2').delete()
+		session.commit()
+
 	
 	# Test that table "Artists" is readable
 	def test_read_artists(self):
@@ -56,6 +63,9 @@ class tests(TestCase):
 				found = True
 
 		self.assertTrue(found)
+
+		session.query(Artists).filter_by(name = 'TESTREAD').delete()
+		session.commit()
 
 	
 	# Test that table "Artists" is readable and accounts for case sensitivity
@@ -74,6 +84,9 @@ class tests(TestCase):
 
 		self.assertTrue(found)
 
+		session.query(Artists).filter_by(name = 'TESTCASE').delete()
+		session.commit()
+
 	
 	# Test filtering "Artists" by an attribute
 	def test_read_artists_atribute(self):
@@ -84,6 +97,9 @@ class tests(TestCase):
 
 		self.assertTrue(query is not None)
 		self.assertTrue(query.genre == 'Alternative-Rock')
+
+		session.query(Artists).filter_by(name = 'TESTATTR').delete()
+		session.commit()
 
 	
 	# Test filtering "Artists" by an attribute returns multiple unique results
@@ -102,6 +118,10 @@ class tests(TestCase):
 			genres.append(Artists.genre)
 
 		self.assertTrue(genres[0] == genres[1])
+
+		session.query(Artists).filter_by(name = 'TESTATTR1').delete()
+		session.query(Artists).filter_by(name = 'TESTATTR2').delete()
+		session.commit()
 
 	
 	# Test deletion of a row in table "Artists"
@@ -129,12 +149,15 @@ class tests(TestCase):
 		query = session.query(Albums).all()
 		startSize = len(query)
 
-		session.add(Albums(name = 'ALBUM', genre = 'GENRE'))
+		session.add(Albums(name = 'ALBUMTEST', genre = 'GENRE'))
 		session.commit()
 		query = session.query(Albums).all()
 		endSize = len(query)
 		
 		self.assertEqual(startSize + 1, endSize)
+
+		session.query(Albums).filter_by(name = 'ALBUMTEST').delete()
+		session.commit()
 
 
 	# Test that table "Albums" can be written multiple queries 
@@ -150,6 +173,10 @@ class tests(TestCase):
 
 		self.assertEqual(startSize + 2, endSize)
 
+		session.query(Albums).filter_by(name = 'ALBUM_MULTIPLE_1').delete()
+		session.query(Albums).filter_by(name = 'ALBUM_MULTIPLE_2').delete()
+		session.commit()
+
 
 	# Test that table "Albums" is readable
 	def test_read_albums(self):
@@ -164,6 +191,9 @@ class tests(TestCase):
 				found = True
 
 		self.assertTrue(found)
+
+		session.query(Albums).filter_by(name = 'TESTREAD').delete()
+		session.commit()
 
 
 	# Test that table "Albums" is readable and accounts for case sensitivity
@@ -182,6 +212,9 @@ class tests(TestCase):
 
 		self.assertTrue(found)
 
+		session.query(Albums).filter_by(name = 'TESTCASE').delete()
+		session.commit()
+
 
 	# Test filtering "Albums" by an attribute
 	def test_read_albums_atribute(self):
@@ -192,6 +225,9 @@ class tests(TestCase):
 
 		self.assertTrue(query is not None)
 		self.assertTrue(query.genre == 'Alternative-Rock')
+
+		session.query(Albums).filter_by(name = 'TESTATTR').delete()
+		session.commit()
 
 	
 	# Test filtering "Albums" by an attribute returns multiple unique results
@@ -210,6 +246,10 @@ class tests(TestCase):
 			genres.append(Albums.genre)
 
 		self.assertTrue(genres[0] == genres[1])
+
+		session.query(Albums).filter_by(name = 'TESTATTR1').delete()
+		session.query(Albums).filter_by(name = 'TESTATTR2').delete()
+		session.commit()
 
 	
 	# Test deletion of a row in table "Albums"
@@ -237,12 +277,15 @@ class tests(TestCase):
 		query = session.query(Songs).all()
 		startSize = len(query)
 
-		session.add(Songs(name = 'SONG', genre = 'GENRE'))
+		session.add(Songs(name = 'SONGTEST', genre = 'GENRE'))
 		session.commit()
 		query = session.query(Songs).all()
 		endSize = len(query)
 		
 		self.assertEqual(startSize + 1, endSize)
+
+		session.query(Songs).filter_by(name = 'SONGTEST').delete()
+		session.commit()
 
 
 	# Test that table "Songs" can be written multiple queries 
@@ -258,6 +301,10 @@ class tests(TestCase):
 
 		self.assertEqual(startSize + 2, endSize)
 
+		session.query(Songs).filter_by(name = 'SONG_MULTIPLE_1').delete()
+		session.query(Songs).filter_by(name = 'SONG_MULTIPLE_2').delete()
+		session.commit()
+
 
 		# Test that table "Songs" is readable
 	def test_read_songs(self):
@@ -272,6 +319,9 @@ class tests(TestCase):
 				found = True
 
 		self.assertTrue(found)
+
+		session.query(Songs).filter_by(name = 'TESTREAD').delete()
+		session.commit()
 
 	
 	# Test that table "Songs" is readable and accounts for case sensitivity
@@ -290,6 +340,9 @@ class tests(TestCase):
 
 		self.assertTrue(found)
 
+		session.query(Songs).filter_by(name = 'TESTCASE').delete()
+		session.commit()
+
 	
 	# Test filtering "Songs" by an attribute
 	def test_read_songs_atribute(self):
@@ -300,6 +353,9 @@ class tests(TestCase):
 
 		self.assertTrue(query is not None)
 		self.assertTrue(query.genre == 'Alternative-Rock')
+
+		session.query(Songs).filter_by(name = 'TESTATTR').delete()
+		session.commit()
 
 	
 	# Test filtering "Songs" by an attribute returns multiple unique results
@@ -318,6 +374,10 @@ class tests(TestCase):
 			genres.append(Songs.genre)
 
 		self.assertTrue(genres[0] == genres[1])
+
+		session.query(Songs).filter_by(name = 'TESTATTR1').delete()
+		session.query(Songs).filter_by(name = 'TESTATTR2').delete()
+		session.commit()
 
 	
 	# Test deletion of a row in table "Songs"
