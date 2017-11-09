@@ -13,30 +13,51 @@
 {% for key in artists %}
 {% if ''.join(key['name'].split()).lower() == artist %}
 <div class="info-area"
-    <h1> {{ key['name'] }} </h1>
-    <div class="image-area"><img id="album-cover" src={{key['pic_link']}} alt="{{ artist }}"></div>
+     <h1> {{ key['name'] }} </h1>
+     <div class="image-area"><img id="album-cover" src={{key['pic_link']}} alt="{{ artist }}"></div>
 </div>
 
-    <div class="data-area">
-      <p class="data">Start Date: {{key['start_date']}}</p>
-      <p class="data">From: {{key['origin']}}</p>
-      <p class="data">Genre: {{key['genre']}}</p>
-      <p class="data"></p>
-      <p id="band-name">{{key['name']}}</p>
-      <p>Latest release: {{key['latest_release']}}</p>
-      <br/>
-    </div>
+<div class="data-area">
+  <p class="data">Start Date: {{key['start_date']}}</p>
+  <p class="data">From: {{key['origin']}}</p>
+  <p class="data">Genre: {{key['genre']}}</p>
+  <p class="data"></p>
+  <p id="band-name">{{key['name']}}</p>
+  <p>Latest release: {{key['latest_release']}}</p>
+
+
+  {% for song_dic in songs %}
+  {% if song_dic['artist'] == key['name'] %}
+
+  <p id="song-link">Featured Song: <a href="/{{'song/'+ ''.join(song_dic['name'].split()).lower()}}">{{song_dic['name']}}</a></p>
+  {% endif %}
+  {% endfor %}
+  
+  {% for album_dic in albums %}
+  {% if album_dic['artist'] == key['name'] %}
+
+  <p id="album-title">Featured Album: <a href="/{{'album/'+ ''.join(album_dic['name'].split()).lower()}}">{{album_dic['name']}}</a></p>
+  {% endif %}
+  {% endfor %}
+
+
+  
+  <br/>
+
+
+  
+</div>
 
 
 <div class="bio-area">
-      <h2>Bio</h2>
-      <p>{{key['bio']}}</p>
-      <!-- <p id="album-title">Featured Album: Pretty Hate Machine</p>
-      <p id="song-link">Featured Song: Head Like a Hole</p>
-      <br> -->
+  <h2>Bio</h2>
+  <p>{{key['bio']}}</p>
+  <!-- <p id="album-title">Featured Album: Pretty Hate Machine</p>
+       <p id="song-link">Featured Song: Head Like a Hole</p>
+       <br> -->
 </div>
 
-  {% endif %}
+{% endif %}
 {% endfor %}
 
 {% endblock %}

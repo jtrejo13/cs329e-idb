@@ -49,10 +49,10 @@
     {% for column in tableTitles %}
 
     {% if column == "name" %}
-    <td> <a alt={{ key[column] }} href="/{{'database/album/'+ ''.join(key[column].split()).lower() }}"> {{ key[column] }} </a></td>
+    <td> <a alt={{ key[column] }} href="/{{'album/'+ ''.join(key[column].split()).lower() }}"> {{ key[column] }} </a></td>
 
     {% elif column == 'artist' %}
-    <td> <a alt={{ key[column] }} href="/{{'database/artist/'+ ''.join(key[column].split()).lower() }}"> {{ key[column] }} </a></td>
+    <td> <a alt={{ key[column] }} href="/{{'artist/'+ ''.join(key[column].split()).lower() }}"> {{ key[column] }} </a></td>
 
     {% else %}    
     <td>
@@ -82,9 +82,9 @@
     <tr>
       {% for key in tableTitles %}
       {% if key == 'NAME' %}
-      <td> <a alt={{ name[key] }} href="/{{'database/'+ ''.join(name[key].split()).lower() + '-album' }}"> {{ name[key] }} </a></td>
+      <td> <a alt={{ name[key] }} href="/{{''+ ''.join(name[key].split()).lower() + '-album' }}"> {{ name[key] }} </a></td>
       {% elif key == 'BAND' %}
-      <td> <a alt={{ name[key] }} href="/{{'database/'+ ''.join(name[key].split()).lower() + '-band' }}"> {{ name[key] }} </a></td> 
+      <td> <a alt={{ name[key] }} href="/{{''+ ''.join(name[key].split()).lower() + '-band' }}"> {{ name[key] }} </a></td> 
       {% else %}
       <td> {{ name[key] }} </td>
       {% endif %}

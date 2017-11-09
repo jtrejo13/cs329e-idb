@@ -21,8 +21,14 @@
       <p class="data"># of tracks: {{ album['num_tracks'] }}</p>
       <p class="data">Genre: {{ album_dic['genre'] }}</p>
           <p id="album-title">{{ album_dic['name'] }}</p>
-      <p id="band-name">by: <a href="/{{'database/artist/'+ ''.join(album_dic['artist'].split()).lower() }}">{{ album_dic['artist'] }}</a></p>
-      <p id="song-title">Featured Song: <!-- ??? ADD LINK --></p>
+      <p id="band-name">by: <a href="/{{'artist/'+ ''.join(album_dic['artist'].split()).lower() }}">{{ album_dic['artist'] }}</a></p>
+
+      {% for song_dic in songs %}
+      {% if song_dic['album'] == album_dic['name'] %}
+      <p id="song-link">Featured Song: <a href="/{{'song/'+ ''.join(song_dic['name'].split()).lower()}}">{{song_dic['name']}}</a></p>
+      {% endif %}
+      {% endfor %} 
+      
       <br>
     </div>
 </div>

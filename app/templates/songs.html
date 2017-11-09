@@ -50,13 +50,13 @@
     {% for column in tableTitles %}
     
     {% if column == "name" %}
-    <td> <a alt={{ key[column] }} href="/{{'database/song/'+ ''.join(key[column].split()).lower() }}"> {{ key[column] }} </a></td>
+    <td> <a alt={{ key[column] }} href="/{{'song/'+ ''.join(key[column].split()).lower() }}"> {{ key[column] }} </a></td>
     
     {% elif column == 'artist' %}
-    <td> <a alt={{ key[column] }} href="/{{'database/artist/'+ ''.join(key[column].split()).lower() }}"> {{ key[column] }} </a></td>
+    <td> <a alt={{ key[column] }} href="/{{'artist/'+ ''.join(key[column].split()).lower() }}"> {{ key[column] }} </a></td>
     
     {% elif column == 'album' %}
-    <td> <a alt={{ key[column] }} href="/{{'database/album/'+ ''.join(key[column].split()).lower() }}"> {{ key[column] }} </a></td>
+    <td> <a alt={{ key[column] }} href="/{{'album/'+ ''.join(key[column].split()).lower() }}"> {{ key[column] }} </a></td>
 
     {% else %}
     <td>
