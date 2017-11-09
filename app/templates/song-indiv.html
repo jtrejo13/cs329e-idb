@@ -10,28 +10,29 @@
 {% endblock %}
 
 {% block content %}
-<!-- <p> {{title}} </p> -->
-{% for key in songs %}
-  {% if ''.join(key['name'].split()).lower() == title %}
-    <h1> {{key[name]}} </h1>
+
+{% for song_dic in songs %}
+  {% if ''.join(song_dic['name'].split()).lower() == title %}
+    <h1> {{ song_dic['name'] }}</h1>
+    <div class="image-area"><img id="album-cover" src="{{ song_dic['pic_link'] }}" alt="{{ album }}"></div>
+
     <div class="data-area">
-      <p class="data">Released: {{key['release_date']}}</p>
-      <p class="data">Album: {{key['album']}}</p>
-      <p class="data">Genre: {{key['genre']}}</p>
-      <p class="data">Duration: {{key['duration']}}</p>
-      <p class="data">Rank: {{key['rank']}}</p>
+      <p class="data">Released: {{ song_dic['release_date'] }}</p>
+      <p class="data">Album: <a href="/{{'database/album/'+ ''.join(song_dic['album'].split()).lower() }}">{{song_dic['album']}}</a></p>
+      <p class="data">Genre: {{ song_dic['genre'] }}</p>
+      <p class="data">Duration: {{song_dic['duration']}}</p>
+      <p class="data">Rank: {{song_dic['rank']}}</p>
     </div>
 
     <div class="large-area">
-      <p id="song-title">{{key['name']}}</p>
-      <p id="band-name">{{key['artist']}}</p>
-      <p id="itunes-link"><a href="{{key['song_link']}}">iTunes Link to Album</a></p>
+      <p id="song-title">{{ song_dic['name'] }}</p>
+      <p id="band-name">by: <a href="/{{'database/artist/'+ ''.join(song_dic['artist'].split()).lower() }}">{{ song_dic['artist'] }}</a></p>
+      <p id="itunes-link"><a href="{{song_dic['song_link']}}" target="_blank">iTunes Link to Album</a></p>
       <!-- <p id="lyrics-link"><a href="https://genius.com/Coldplay-god-put-a-smile-upon-your-face-lyrics">Song Lyrics</a></p>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/qhIVgSoJVRc" frameborder="0" allowfullscreen></iframe> -->
     </div>
   {% endif %}
 {% endfor %}
-
 {% endblock %}
 
 

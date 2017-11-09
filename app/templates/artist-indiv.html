@@ -13,7 +13,7 @@
 {% for key in artists %}
   {% if ''.join(key['name'].split()).lower() == artist %}
     <h1> {{key[name]}} </h1>
-    <div class="image-area"><img id="album-cover" src={{key[pic_link]}} alt="NIN"></div>    
+    <div class="image-area"><img id="album-cover" src={{key['pic_link']}} alt="{{ artist }}"></div>
 
     <div class="data-area">
       <p class="data">Start Date: {{key['start_date']}}</p>

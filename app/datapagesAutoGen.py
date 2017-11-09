@@ -34,5 +34,8 @@ def database2(artist=None):
 
 @app.route('/database/album/<album>')
 def database3(album=None):
-    albums = session.query(Albums)    
+    albums = session.query(Albums)
+    #for dic in albums:
+    #    if ''.join(dic['name'].split()).lower() == album:
+    #        album_dic = dic
     return render_template('album-indiv.html', albums = albums, album = album)
