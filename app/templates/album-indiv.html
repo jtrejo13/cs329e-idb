@@ -2,7 +2,7 @@
 
 {% block head %}
 {% include "head.html" %}
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'CSS/subpage-albums.css') }}" >
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'CSS/album-indiv.css') }}" >
 {% endblock %}
 
 {% block header %}
@@ -12,21 +12,23 @@
 {% block content %}
 {% for album_dic in albums %}
   {% if ''.join(album_dic['name'].split()).lower() == album %}
-    <h1> {{ album_dic['name'] }}</h1>
+<h1> {{ album_dic['name'] }}</h1>
+<div class="left-col">
     <div class="image-area"><img id="album-cover" src="{{ album_dic['pic_link'] }}" alt="{{ album }}"></div>
 
     <div class="data-area">
       <p class="data">Released: {{ album_dic['release_date'] }}</p>
       <p class="data"># of tracks: {{ album['num_tracks'] }}</p>
       <p class="data">Genre: {{ album_dic['genre'] }}</p>
-    </div>
-
-    <div class="large-area">
-      <p id="album-title">{{ album_dic['name'] }}</p>
+          <p id="album-title">{{ album_dic['name'] }}</p>
       <p id="band-name">by: <a href="/{{'database/artist/'+ ''.join(album_dic['artist'].split()).lower() }}">{{ album_dic['artist'] }}</a></p>
       <p id="song-title">Featured Song: <!-- ??? ADD LINK --></p>
       <br>
-      <h1>Track Listing</h1>
+    </div>
+</div>
+
+    <div class="track-list">
+      <h2>Track Listing</h2>
       <table class="list">
         <tr>
           <th>No.</th>
@@ -42,6 +44,7 @@
         {% endfor %}
       </table>
     </div>
+    
   {% endif %}
 {% endfor %}
 
