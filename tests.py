@@ -89,7 +89,7 @@ class tests(TestCase):
 	# Test filtering "Artists" by an attribute returns multiple unique results
 	session.add(Artists(name = 'TESTATTR1', genre = 'Alternative-Pop'))
 	session.add(Artists(name = 'TESTATTR1', genre = 'Electronic'))
-	session.commit
+	session.commit()
 
 	query = session.query(Artists).filter(Artists.name == 'TESTATTR1').all()
 
