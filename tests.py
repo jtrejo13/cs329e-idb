@@ -97,7 +97,7 @@ class tests(TestCase):
 		for artist in query:
 			genres.append(Artists.genre)
 
-		self.assertTrue(gneres[0] == genres[1])
+		self.assertTrue(genres[0] == genres[1])
 
 	
 	# Test deletion of a row in table "Artists"
