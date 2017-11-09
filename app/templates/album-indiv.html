@@ -2,7 +2,7 @@
 
 {% block head %}
 {% include "head.html" %}
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'CSS/subpage-albums.css') }}" >
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'CSS/album-indiv.css') }}" >
 {% endblock %}
 
 {% block header %}
@@ -10,109 +10,49 @@
 {% endblock %}
 
 {% block content %}
-<div class="image-area"><img id="album-cover" src="https://upload.wikimedia.org/wikipedia/en/7/7c/Bananaphone.jpg" alt="Banaphone"></div>
+{% for album_dic in albums %}
+  {% if ''.join(album_dic['name'].split()).lower() == album %}
+<h1> {{ album_dic['name'] }}</h1>
+<div class="left-col">
+    <div class="image-area"><img id="album-cover" src="{{ album_dic['pic_link'] }}" alt="{{ album }}"></div>
 
-<div class="data-area">
-  <p class="data">Released: 1994</p>
-  <p class="data"># of tracks: 16</p>
-  <p class="data">Children's</p>
+    <div class="data-area">
+      <p class="data">Released: {{ album_dic['release_date'] }}</p>
+      <p class="data"># of tracks: {{ album['num_tracks'] }}</p>
+      <p class="data">Genre: {{ album_dic['genre'] }}</p>
+          <p id="album-title">{{ album_dic['name'] }}</p>
+      <p id="band-name">by: <a href="/{{'artist/'+ ''.join(album_dic['artist'].split()).lower() }}">{{ album_dic['artist'] }}</a></p>
+
+      {% for song_dic in songs %}
+      {% if song_dic['album'] == album_dic['name'] %}
+      <p id="song-link">Featured Song: <a href="/{{'song/'+ ''.join(song_dic['name'].split()).lower()}}">{{song_dic['name']}}</a></p>
+      {% endif %}
+      {% endfor %} 
+      
+      <br>
+    </div>
 </div>
 
-<div class="large-area">
-  <p id="album-title">Bananaphone</p>
-  <p id="band-name">by: Raffi<!-- ADD LINK --></p>
-  <p id="song-title">Featured Song: Bananaphone<!-- ADD LINK --></p>
-  <br>
-  <h1>Track Listing</h1>
-  <table class="list">
-    <tr>
-      <th>No.</th>
-      <th>Title</th>
-      <th>Length</th>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>Bananaphone</td>
-      <td>3:12</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Shake a Toe</td>
-      <td>2:20</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>The World We Love</td>
-      <td>3:23</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>Slow Day</td>
-      <td>3:25</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>The Changing Garden of Mr. Bell</td>
-      <td>4:07</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>Naturally</td>
-      <td>3:04</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>Spring Flowers</td>
-      <td>2:40</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>C-A-N-A-D-A</td>
-      <td>2:50</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>Michael Row the Boat Ashore</td>
-      <td>3:25</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>First Peoples</td>
-      <td>4:37</td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td>Dee Myth</td>
-      <td>2:59</td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td>Cowlit Night</td>
-      <td>3:21</td>
-    </tr>
-    <tr>
-      <td>13</td>
-      <td>The Gorilla Song</td>
-      <td>2:10</td>
-    </tr>
-    <tr>
-      <td>14</td>
-      <td>Simple Gifts</td>
-      <td>2:15</td>
-    </tr>
-    <tr>
-      <td>15</td>
-      <td>Down by the Riverside</td>
-      <td>3:13</td>
-    </tr>
-    <tr>
-      <td>16</td>
-      <td>The Shmenge Polka</td>
-      <td>2:07</td>
-    </tr>
-  </table>
-</div>
-
+    <div class="track-list">
+      <h2>Track Listing</h2>
+      <table class="list">
+        <tr>
+          <th>No.</th>
+          <th>Title</th>
+          <th>Length</th>
+        </tr>
+        {% for track in album_dic['track_list'] %}
+        <tr>
+          <td>{{ track[0] }}</td>
+          <td>{{ track[1] }}</td>
+          <td>{{ track[2] }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+    
+  {% endif %}
+{% endfor %}
 
 {% endblock %}
 

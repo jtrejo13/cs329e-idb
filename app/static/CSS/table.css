@@ -1,15 +1,29 @@
 /*************
   Blue Theme
- *************/
+*************/
+
+/* pager */
+
 /* overall */
-table{
+
+.pager{
+    position: relative;
     margin: auto;
     width: 80%;
-    position:relative;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%, -50%);
+    left:95%;
+    transform: translate(-50%, 0);    
+    
 }
+
+table{
+    position: relative;
+    margin: auto;
+    width: 80%;
+    top: 0%;
+    left:50%;
+    transform: translate(-50%, 0);    
+}
+
 
 .tablesorter-blue {
     width: 70%;
@@ -241,3 +255,4 @@ caption {
     cursor: pointer;
     background-color: #e6bf99;
 }
+
