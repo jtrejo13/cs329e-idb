@@ -87,7 +87,7 @@ class tests(TestCase):
 
 	
 	# Test filtering "Artists" by an attribute returns multiple unique results
-	def test_read_artists_atribute(self):
+	def test_read_artists_atribute_multiple(self):
 		session.add(Artists(name = 'TESTATTR1', genre = 'Alternative-Pop'))
 		session.add(Artists(name = 'TESTATTR1', genre = 'Electronic'))
 		session.commit()
