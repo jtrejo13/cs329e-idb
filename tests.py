@@ -136,6 +136,33 @@ class tests(TestCase):
 		
 		self.assertEqual(startSize + 1, endSize)
 
+	# Test that table "Artists" can be written multiple queries 
+	def test_write_albums_multiple(self):
+		query = session.query(Albums).all()
+		startSize = len(query)
+
+		session.add(Albums(name = 'ALBUM_MULTIPLE_1', genre = 'GENRE'))
+		session.add(Albums(name = 'ALBUM_MULTIPLE_2', genre = 'GENRE'))
+		session.commit()
+		query = session.query(Albums).all()
+		endSize = len(query)
+
+		self.assertEqual(startSize + 2, endSize)
+
+	# Test that table "Artists" is readable
+	def test_read_albums(self):
+		session.add(Albums(name = 'TESTREAD', genre = 'GENRE'))
+		session.commit()
+
+		query = session.query(Albums).all()
+		found = False
+
+		for album in query:
+			if(album.name == 'TESTREAD' and album.genre == 'GENRE'):
+				found = True
+
+		self.assertTrue(found)
+
 
 if __name__ == "__main__":
 	Base.metadata.bind = engine
