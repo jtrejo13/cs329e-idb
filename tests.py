@@ -7,7 +7,7 @@ from sqlalchemy.orm import sessionmaker
 from flask import *
 from sqlalchemy import Column, ForeignKey, Integer, String, Text, Float, LargeBinary, Boolean
 
-from models import *
+from app.models import *
 
 
 class tests(TestCase):
