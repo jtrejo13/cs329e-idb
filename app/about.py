@@ -17,10 +17,16 @@
 
 from app import app
 from flask import render_template
+import subprocess
+import json
 
 @app.route('/about')
 def about():
-    return render_template("about.html")
+	return render_template("about.html")
 
+@app.route('/tests')
+def tests():
+	output = subprocess.getoutput("python tests.py")
+	return json.dumps({'output': str(output)})
 
 
