@@ -7,14 +7,14 @@ addons:
   postgresql: "9.5"
 
 services:
-  - postgresql
+    - postgresql
 
 install:
     - pip install --upgrade pip
     - pip --version
     - pip install -r requirements.txt
 before_script:
-    - psql -c 'create database musicdb;' -U postgres
+    - psql -c 'create database nettunesdb;' -U postgres
 
 script:
-- python test.py
+    - python tests.py
