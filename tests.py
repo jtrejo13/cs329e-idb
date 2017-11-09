@@ -18,6 +18,7 @@ class tests(TestCase):
 	
 	# Test that table "Artists" is writable
 	def test_write_artists(self):
+		session.rollback()
 		query = session.query(Artists).all()
 		startSize = len(query)
 
@@ -31,6 +32,7 @@ class tests(TestCase):
 
 	# Test that table "Artists" can be written multiple queries 
 	def test_write_artist_multiple(self):
+		session.rollback()
 		query = session.query(Artists).all()
 		startSize = len(query)
 
@@ -45,6 +47,7 @@ class tests(TestCase):
 	
 	# Test that table "Artists" is readable
 	def test_read_artists(self):
+		session.rollback()
 		session.add(Artists(name = 'TESTREAD', genre = 'GENRE'))
 		session.commit()
 
@@ -60,6 +63,7 @@ class tests(TestCase):
 	
 	# Test that table "Artists" is readable and accounts for case sensitivity
 	def test_read_artists_case_sensitive(self):
+		session.rollback()
 		session.add(Artists(name = 'TESTCASE', genre = 'GENRE'))
 		session.commit()
 
@@ -77,6 +81,7 @@ class tests(TestCase):
 	
 	# Test filtering "Artists" by an attribute
 	def test_read_artists_atribute(self):
+		session.rollback()
 		session.add(Artists(name = 'TESTATTR', genre = 'Alternative-Rock'))
 		session.commit()
 
@@ -88,6 +93,7 @@ class tests(TestCase):
 	
 	# Test filtering "Artists" by an attribute returns multiple unique results
 	def test_read_artists_atribute_multiple(self):
+		session.rollback()
 		session.add(Artists(name = 'TESTATTR1', genre = 'Alternative-Pop'))
 		session.add(Artists(name = 'TESTATTR1', genre = 'Electronic'))
 		session.commit()
@@ -106,6 +112,7 @@ class tests(TestCase):
 	
 	# Test deletion of a row in table "Artists"
 	def test_artists_delete(self):
+		session.rollback()
 		session.add(Artists(name = 'ARTISTDEL'))
 		session.commit()
 
