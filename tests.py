@@ -83,21 +83,21 @@ class tests(TestCase):
 
 	
 	# Test filtering "Artists" by an attribute returns multiple unique results
-	# def test_read_artists_atribute_multiple(self):
-	# 	session.add(Artists(name = 'TESTATTR1', genre = 'Alternative-Pop'))
-	# 	session.add(Artists(name = 'TESTATTR1', genre = 'Electronic'))
-	# 	session.commit()
+	def test_read_artists_atribute_multiple(self):
+		session.add(Artists(name = 'TESTATTR1', genre = 'Electronic'))
+		session.add(Artists(name = 'TESTATTR2', genre = 'Electronic'))
+		session.commit()
 
-	# 	query = session.query(Artists).filter(Artists.name == 'TESTATTR1').all()
+		query = session.query(Artists).filter(Artists.genre == 'Electronic').all()
 
-	# 	self.assertTrue(query is not None)
-	# 	self.assertTrue(len(query) == 2)
+		self.assertTrue(query is not None)
+		self.assertTrue(len(query) == 2)
 
-	# 	genres = []
-	# 	for artist in query:
-	# 		genres.append(Artists.genre)
+		genres = []
+		for artist in query:
+			genres.append(Artists.genre)
 
-	# 	self.assertTrue(gneres[0] != genres[1])
+		self.assertTrue(gneres[0] == genres[1])
 
 	
 	# Test deletion of a row in table "Artists"
