@@ -46,7 +46,7 @@ class tests(TestCase):
 	# Test that table "Artists" is readable
 	def test_read_artists(self):
 		session.add(Artists(name = 'TESTREAD', genre = 'GENRE'))
-		session.commit
+		session.commit()
 
 		query = session.query(Artists).all()
 		found = False
@@ -87,26 +87,27 @@ class tests(TestCase):
 
 	
 	# Test filtering "Artists" by an attribute returns multiple unique results
-	session.add(Artists(name = 'TESTATTR1', genre = 'Alternative-Pop'))
-	session.add(Artists(name = 'TESTATTR1', genre = 'Electronic'))
-	session.commit()
+	def test_read_artists_atribute(self):
+		session.add(Artists(name = 'TESTATTR1', genre = 'Alternative-Pop'))
+		session.add(Artists(name = 'TESTATTR1', genre = 'Electronic'))
+		session.commit()
 
-	query = session.query(Artists).filter(Artists.name == 'TESTATTR1').all()
+		query = session.query(Artists).filter(Artists.name == 'TESTATTR1').all()
 
-	self.assertTrue(query is not None)
-	self.assertTrue(len(query) == 2)
+		self.assertTrue(query is not None)
+		self.assertTrue(len(query) == 2)
 
-	genres = []
-	for artist in query:
-		genres.append(artist.genre)
+		genres = []
+		for artist in query:
+			genres.append(artist.genre)
 
-	self.assertTrue(gneres[0] != genres[1])
+		self.assertTrue(gneres[0] != genres[1])
 
 	
 	# Test deletion of a row in table "Artists"
 	def test_artists_delete(self):
 		session.add(Artists(name = 'ARTISTDEL'))
-		session.commit
+		session.commit()
 
 		query = session.query(Artists).filter(Artists.name == 'ARTISTDEL').first()
 
@@ -117,32 +118,6 @@ class tests(TestCase):
 	
 		new_query = session.query(Artists).filter(atists.name == 'ARTISTDEL').first()
 		self.assertTrue(new_query is None)
-
-	# Test creating object from "Artists"
-	new_entry = artists(
-		name = 'artist',
-	    artist_link = 'website.com',
-	    pic_link = 'pic.com',
-	    origin = 'middle of nowhere',
-	    genre = 'genre',
-	    start_date = '11/5/2017',
-	    latest_release = '11/6/2017',
-	    bio = 'Some bio'
-	)
-
-	result = {
-		name: 'artist',
-	    artist_link: 'website.com',
-	    pic_link: 'pic.com',
-	    origin: 'middle of nowhere',
-	    genre: 'genre',
-	    start_date: '11/5/2017',
-	    latest_release: '11/6/2017',
-	    bio: 'Some bio'
-	}
-
-	self.assertTrue(Artists.get_obj(new_entry) == result)
-
 
 
 if __name__ == "__main__":
