@@ -23,7 +23,7 @@ class tests(TestCase):
 
 		session.add(Artists(name = 'ARTIST', genre = 'GENRE'))
 		session.commit()
-		query = session.query(Artists).all
+		query = session.query(Artists).all()
 		endSize = len(query)
 		
 		self.assertEqual(startSize + 1, endSize)
