@@ -136,7 +136,8 @@ class tests(TestCase):
 		
 		self.assertEqual(startSize + 1, endSize)
 
-	# Test that table "Artists" can be written multiple queries 
+
+	# Test that table "Albums" can be written multiple queries 
 	def test_write_albums_multiple(self):
 		query = session.query(Albums).all()
 		startSize = len(query)
@@ -149,7 +150,8 @@ class tests(TestCase):
 
 		self.assertEqual(startSize + 2, endSize)
 
-	# Test that table "Artists" is readable
+
+	# Test that table "Albums" is readable
 	def test_read_albums(self):
 		session.add(Albums(name = 'TESTREAD', genre = 'GENRE'))
 		session.commit()
@@ -163,6 +165,68 @@ class tests(TestCase):
 
 		self.assertTrue(found)
 
+
+	# Test that table "Albums" is readable and accounts for case sensitivity
+	def test_read_albums_case_sensitive(self):
+		session.add(Albums(name = 'TESTCASE', genre = 'GENRE'))
+		session.commit()
+
+		query = session.query(Albums).all()
+		found = False
+
+		for album in query:
+			if(album.name == 'TESTCASE'):
+				found = True
+			if(album.name == 'testcase'):
+				found = False
+
+		self.assertTrue(found)
+
+
+	# Test filtering "Albums" by an attribute
+	def test_read_albums_atribute(self):
+		session.add(Albums(name = 'TESTATTR', genre = 'Alternative-Rock'))
+		session.commit()
+
+		query = session.query(Albums).filter(Albums.name == 'TESTATTR').first()
+
+		self.assertTrue(query is not None)
+		self.assertTrue(query.genre == 'Alternative-Rock')
+
+	
+	# Test filtering "Albums" by an attribute returns multiple unique results
+	def test_read_albums_atribute_multiple(self):
+		session.add(Albums(name = 'TESTATTR1', genre = 'Electronic'))
+		session.add(Albums(name = 'TESTATTR2', genre = 'Electronic'))
+		session.commit()
+
+		query = session.query(Albums).filter(Albums.genre == 'Electronic').all()
+
+		self.assertTrue(query is not None)
+		self.assertTrue(len(query) == 2)
+
+		genres = []
+		for album in query:
+			genres.append(Albums.genre)
+
+		self.assertTrue(genres[0] == genres[1])
+
+	
+	# Test deletion of a row in table "Albums"
+	def test_albums_delete(self):
+		session.add(Albums(name = 'ARTISTDEL'))
+		session.commit()
+
+		query = session.query(Albums).filter(Albums.name == 'ARTISTDEL').first()
+
+		self.assertTrue(query is not None)
+
+		session.delete(query)
+		session.commit()
+	
+		new_query = session.query(Albums).filter(Albums.name == 'ARTISTDEL').first()
+		self.assertTrue(new_query is None)
+		
 
 if __name__ == "__main__":
 	Base.metadata.bind = engine
