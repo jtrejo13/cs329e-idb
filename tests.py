@@ -214,17 +214,17 @@ class tests(TestCase):
 	
 	# Test deletion of a row in table "Albums"
 	def test_albums_delete(self):
-		session.add(Albums(name = 'ARTISTDEL'))
+		session.add(Albums(name = 'ALBUMDEL'))
 		session.commit()
 
-		query = session.query(Albums).filter(Albums.name == 'ARTISTDEL').first()
+		query = session.query(Albums).filter(Albums.name == 'ALBUMDEL').first()
 
 		self.assertTrue(query is not None)
 
 		session.delete(query)
 		session.commit()
 	
-		new_query = session.query(Albums).filter(Albums.name == 'ARTISTDEL').first()
+		new_query = session.query(Albums).filter(Albums.name == 'ALBUMDEL').first()
 		self.assertTrue(new_query is None)
 
 
@@ -257,6 +257,83 @@ class tests(TestCase):
 		endSize = len(query)
 
 		self.assertEqual(startSize + 2, endSize)
+
+
+		# Test that table "Songs" is readable
+	def test_read_songs(self):
+		session.add(Songs(name = 'TESTREAD', genre = 'GENRE'))
+		session.commit()
+
+		query = session.query(Songs).all()
+		found = False
+
+		for song in query:
+			if(song.name == 'TESTREAD' and song.genre == 'GENRE'):
+				found = True
+
+		self.assertTrue(found)
+
+	
+	# Test that table "Songs" is readable and accounts for case sensitivity
+	def test_read_songs_case_sensitive(self):
+		session.add(Songs(name = 'TESTCASE', genre = 'GENRE'))
+		session.commit()
+
+		query = session.query(Songs).all()
+		found = False
+
+		for song in query:
+			if(song.name == 'TESTCASE'):
+				found = True
+			if(song.name == 'testcase'):
+				found = False
+
+		self.assertTrue(found)
+
+	
+	# Test filtering "Songs" by an attribute
+	def test_read_songs_atribute(self):
+		session.add(Songs(name = 'TESTATTR', genre = 'Alternative-Rock'))
+		session.commit()
+
+		query = session.query(Songs).filter(Songs.name == 'TESTATTR').first()
+
+		self.assertTrue(query is not None)
+		self.assertTrue(query.genre == 'Alternative-Rock')
+
+	
+	# Test filtering "Songs" by an attribute returns multiple unique results
+	def test_read_songs_atribute_multiple(self):
+		session.add(Songs(name = 'TESTATTR1', genre = 'Electronic'))
+		session.add(Songs(name = 'TESTATTR2', genre = 'Electronic'))
+		session.commit()
+
+		query = session.query(Songs).filter(Songs.genre == 'Electronic').all()
+
+		self.assertTrue(query is not None)
+		self.assertTrue(len(query) == 2)
+
+		genres = []
+		for song in query:
+			genres.append(Songs.genre)
+
+		self.assertTrue(genres[0] == genres[1])
+
+	
+	# Test deletion of a row in table "Songs"
+	def test_songs_delete(self):
+		session.add(Songs(name = 'SONGDEL'))
+		session.commit()
+
+		query = session.query(Songs).filter(Songs.name == 'SONGDEL').first()
+
+		self.assertTrue(query is not None)
+
+		session.delete(query)
+		session.commit()
+	
+		new_query = session.query(Songs).filter(Songs.name == 'SONGDEL').first()
+		self.assertTrue(new_query is None)
 
 
 
