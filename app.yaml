@@ -2,8 +2,21 @@
 # See https://cloud.google.com/appengine/docs/managed-vms/config for details.
 
 runtime: python
+threadsafe: yes
 env: flex
-entrypoint: gunicorn -b :$PORT main:app
+entrypoint: gunicorn -b :$PORT app:app
 
 runtime_config:
   python_version: 3
+
+env_variables:
+    # Replace user, password, database, and instance connection name with the values obtained
+    # when configuring your Cloud SQL instance.
+    SQLALCHEMY_DATABASE_URI: >-
+      postgresql+psycopg2://postgres:nettunes2017@/nettuneslib?host=/cloudsql/testproject-183322:us-central1:nettuneslib
+beta_settings:
+    cloud_sql_instances: testproject-183322:us-central1:nettuneslib
+
+handlers:
+- url: /.*
+  script: main.app

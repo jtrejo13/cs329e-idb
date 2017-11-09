@@ -3,6 +3,9 @@
 {% block head %}
 {% include "head.html" %}
 <title> nettunes-songs </title>
+<script src="{{ url_for('static', filename="JavaScript/tableConfig.js") }}"></script>
+<script src="{{ url_for('static', filename="JavaScript/jquery.tablesorter.pager.js") }}"></script>   
+
 {% endblock %}
 
 {% block header %}
@@ -10,46 +13,63 @@
 {% endblock %}
 
 {% block content %}
-<h1> Songs </h1></br>
+<h1> Songs </h1><br/>
+
+<!-- pager -->
+<div id="pager" class="pager">
+  <form>
+    <img src="http://mottie.github.com/tablesorter/addons/pager/icons/first.png" class="first"/> 
+    <img src="http://mottie.github.com/tablesorter/addons/pager/icons/prev.png" class="prev"/> 
+    <span class="pagedisplay"></span> 
+    <img src="http://mottie.github.com/tablesorter/addons/pager/icons/next.png" class="next"/> 
+    <img src="http://mottie.github.com/tablesorter/addons/pager/icons/last.png" class="last"/> 
+    <select class="pagesize">
+      <option value="10">10</option>
+      <option value="20">20</option>
+      <option value="30">30</option>
+      <option value="40">40</option>
+      <option value="50">50</option>
+      <option value="60">60</option>
+      <option value="70">70</option>
+      <option value="all">All Rows</option>
+    </select>
+  </form>
+</div>
+
+
 <table class="tablesorter">
   <thead>
     <tr>
-      {% for key in tableTitles %}
-      <th> {{ key }} </th>
+      {% for column in tableTitles %}
+      <th> {{ column }} </th>
       {% endfor %}
     </tr>
   </thead>
-</tbody>
-{% for name in data %}
-<tr>
-  {% for key in tableTitles %}
-  {% if key == "VIDEO_LINK" %}
-  <td>
-    <div class = "video-icon">
-      <a href={{ name[key] }} target="_blank"> <img src={{ url_for('static', filename = "img/icon-youtube.png") }} alt="watch on youtube" height="30"> </a>
-    </div>
-  </td>
-  {% elif key == "LYRICS_LINK" %}
-  <td>
-    <div class = "lyrics-icon">
-      <a href={{ name[key] }} target="_blank"> <img src={{ url_for('static', filename = "img/icon-genius.png") }} alt="lyrics on genius" height="30"></a>
-    </div>
-  </td>
-  {% elif key == 'NAME'  %}
-  <td> <a alt={{ name[key] }} href="/{{'database/'+ ''.join(name[key].split()).lower() + '-song' }}"> {{ name[key] }} </a></td>
-  {% elif key == 'BAND' %}
-  <td> <a alt={{ name[key] }} href="/{{'database/'+ ''.join(name[key].split()).lower() + '-band' }}"> {{ name[key] }} </a></td>
-  {% elif key == 'ALBUM' %}
-  <td> <a alt={{ name[key] }} href="/{{'database/'+ ''.join(name[key].split()).lower() + '-album' }}"> {{ name[key] }} </a></td>
-  {% else %}
-  <td> {{ name[key] }} </td>
-  {% endif %}
-  {% endfor %}
+{% for key in songs %}
+<tr> 
+    {% for column in tableTitles %}
+    
+    {% if column == "name" %}
+    <td> <a alt={{ key[column] }} href="/{{'song/'+ ''.join(key[column].split()).lower() }}"> {{ key[column] }} </a></td>
+    
+    {% elif column == 'artist' %}
+    <td> <a alt={{ key[column] }} href="/{{'artist/'+ ''.join(key[column].split()).lower() }}"> {{ key[column] }} </a></td>
+    
+    {% elif column == 'album' %}
+    <td> <a alt={{ key[column] }} href="/{{'album/'+ ''.join(key[column].split()).lower() }}"> {{ key[column] }} </a></td>
+
+    {% else %}
+    <td>
+        {{key[column]}}
+    </td>
+    
+    {% endif %}
+
+    {% endfor %}
 </tr>
 {% endfor %}
-</tbody>
 </table>
-<script src="{{ url_for('static', filename="JavaScript/tableConfig.js") }}"></script>
+
 {% endblock %}
 
 {% block footer %}

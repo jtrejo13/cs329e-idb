@@ -15,5 +15,10 @@
 #
 
 from app import app
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+# import database models
+# import create database
+
 if __name__=='__main__':
     app.run(host="127.0.0.1", port=8000, debug=True)

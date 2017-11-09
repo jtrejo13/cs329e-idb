@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block head %}
+{% include "head.html" %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'CSS/album-indiv.css') }}" >
+{% endblock %}
+
+{% block header %}
+{% include "navigation.html"%}
+{% endblock %}
+
+{% block content %}
+{% for album_dic in albums %}
+  {% if ''.join(album_dic['name'].split()).lower() == album %}
+<h1> {{ album_dic['name'] }}</h1>
+<div class="left-col">
+    <div class="image-area"><img id="album-cover" src="{{ album_dic['pic_link'] }}" alt="{{ album }}"></div>
+
+    <div class="data-area">
+      <p class="data">Released: {{ album_dic['release_date'] }}</p>
+      <p class="data"># of tracks: {{ album['num_tracks'] }}</p>
+      <p class="data">Genre: {{ album_dic['genre'] }}</p>
+          <p id="album-title">{{ album_dic['name'] }}</p>
+      <p id="band-name">by: <a href="/{{'artist/'+ ''.join(album_dic['artist'].split()).lower() }}">{{ album_dic['artist'] }}</a></p>
+
+      {% for song_dic in songs %}
+      {% if song_dic['album'] == album_dic['name'] %}
+      <p id="song-link">Featured Song: <a href="/{{'song/'+ ''.join(song_dic['name'].split()).lower()}}">{{song_dic['name']}}</a></p>
+      {% endif %}
+      {% endfor %} 
+      
+      <br>
+    </div>
+</div>
+
+    <div class="track-list">
+      <h2>Track Listing</h2>
+      <table class="list">
+        <tr>
+          <th>No.</th>
+          <th>Title</th>
+          <th>Length</th>
+        </tr>
+        {% for track in album_dic['track_list'] %}
+        <tr>
+          <td>{{ track[0] }}</td>
+          <td>{{ track[1] }}</td>
+          <td>{{ track[2] }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+    
+  {% endif %}
+{% endfor %}
+
+{% endblock %}
+
+{% block footer %}
+{% include "footer.html" %}
+{% endblock %}
