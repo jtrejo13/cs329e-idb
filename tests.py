@@ -99,7 +99,7 @@ class tests(TestCase):
 
 		genres = []
 		for artist in query:
-			genres.append(artist.genre)
+			genres.append(Artists.genre)
 
 		self.assertTrue(gneres[0] != genres[1])
 
@@ -116,7 +116,7 @@ class tests(TestCase):
 		session.delete(query)
 		session.commit()
 	
-		new_query = session.query(Artists).filter(atists.name == 'ARTISTDEL').first()
+		new_query = session.query(Artists).filter(Artists.name == 'ARTISTDEL').first()
 		self.assertTrue(new_query is None)
 
 
