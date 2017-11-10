@@ -9,8 +9,12 @@ from sqlalchemy import Column, ForeignKey, Integer, String, Text, Float, LargeBi
 
 from app.models import *
 
+Base.metadata.bind = engine
+DBSession = sessionmaker(bind=engine)
+session = DBSession()
 
-class tests(TestCase):
+
+class TestIDB(TestCase):
 
 # -----------
 # Test Artists
@@ -398,7 +402,4 @@ class tests(TestCase):
 
 
 if __name__ == "__main__":
-	Base.metadata.bind = engine
-	DBSession = sessionmaker(bind=engine)
-	session = DBSession()
 	main()

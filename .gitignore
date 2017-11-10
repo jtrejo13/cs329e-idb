@@ -4,3 +4,5 @@ flask
 env/
 *pyc
 myEnv
+.coverage
+.idea/
