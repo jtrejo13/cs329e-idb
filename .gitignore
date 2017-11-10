@@ -3,5 +3,5 @@ __pycache__
 flask
 env/
 *pyc
-myEnv
+venv
 .idea/

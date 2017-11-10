@@ -9,35 +9,63 @@
 ;; 
 ;; Created: Thu Nov  9 01:30:35 2017 (-0600)
 ;; Version: 
-;; Last-Updated: Thu Nov  9 02:12:29 2017 (-0600)
+;; Last-Updated: Thu Nov  9 19:37:05 2017 (-0600)
 ;;           By: yulu
-;;     Update #: 44
+;;     Update #: 88
 ;; 
 */
 
 .info-area{
-    float: left;
-    width: 40%;
-    left: 50%;
-    text-align: right;
+    margin: 10% 5%;
+    text-align: left;
     font-size: 2em;
     
     
 }
 
+.info-area h1{
+    display: block;
+    width: 30%;
+    float: left;
+    margin-left: 10%;
+    margin-top: 0;
+    height: 20%;
+    
+}
+
 .image-area{
+    float: right;
     width: 40%;
-    margin: auto;
+    height: 20%;
+    margin-right: 10%;
+    margin-top: 0;
+}
+
+.image-area img{
+    float:left;
+    top:-10%;
+}
+
+
+.data-area{
+    width: 80%;
+    clear: both;    
+}
+
+.data1{
+    width: 40%;
+    float: left;
+    text-align: right;
+    margin-top: 9%;
+}
+
+.data2{
+    width: 40%;
+    float: right;
+    text-align: left;
     margin-top: 5%;
 }
 
-.data-area{
-    width: 40%;
-    float: right;
-    border-left: 0.2em solid #D0D0D0;
-    padding-left: 4em;
-    text-align: left;
-}
 .bio-area{
     clear: both;
     position: relative;
