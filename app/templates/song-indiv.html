@@ -13,21 +13,20 @@
 
 {% for song_dic in songs %}
 {% if ''.join(song_dic['name'].split()).lower() == title %}
-<div class="title-area">
-<h1> {{ song_dic['name'] }}</h1>
-<p id="band-name">by: <a href="/{{'artist/'+ ''.join(song_dic['artist'].split()).lower() }}">{{ song_dic['artist'] }}</a></p>
-<p id="itunes-link"><a href="{{song_dic['song_link']}}" target="_blank">iTunes Link to Album</a></p>
+
 {% for album_dic in albums %}
         {% if album_dic['name'] == song_dic['album'] %}
           <div class="image-area"><img id="album-cover" src="{{ album_dic['pic_link'] }}" alt="{{ album_dic['name'] }}"></div>
         {% endif %}
       {% endfor %}
-</div>
 
-<div class="divider">
-</div>
+	  <div class="data-area">
 
-    <div class="data-area">
+<p class="title1"> <strong> {{ song_dic['name'] }} </strong> </p>
+<p id="band-name">by: <a href="/{{'artist/'+ ''.join(song_dic['artist'].split()).lower() }}">{{ song_dic['artist'] }}</a></p>
+<p id="itunes-link"><a href="{{song_dic['song_link']}}" target="_blank">iTunes Link to Album</a></p>
+
+
       <p class="data">Released: {{ song_dic['release_date'] }}</p>
       <p class="data">Album: <a href="/{{'album/'+ ''.join(song_dic['album'].split()).lower() }}">{{song_dic['album']}}</a></p>
       <p class="data">Genre: {{ song_dic['genre'] }}</p>
