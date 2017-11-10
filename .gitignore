@@ -4,3 +4,4 @@ flask
 env/
 *pyc
 myEnv
+.coverage
