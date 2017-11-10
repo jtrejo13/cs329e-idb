@@ -1,3 +1,24 @@
+commit dee25cd055a636b4fe8e2d29be5cf1b9671f0fd0
+Author: jtrejo13 <jtrejo13@utexas.edu>
+Date:   Thu Nov 9 20:10:06 2017 -0600
+
+    Create models.html
+
+commit 2841a02e60cff172c8b0b50ec389ac343f6ac889
+Merge: 0162cbc f7c32d4
+Author: Juan Trj <jtrejo13@utexas.edu>
+Date:   Thu Nov 9 18:48:13 2017 -0600
+
+    Merge pull request #43 from jtrejo13/improveAbout
+    
+    Improve About Page and Fix Tests Page
+
+commit f7c32d4eb132ac9589797b6008574137861da49b
+Author: jtrejo13 <jtrejo13@utexas.edu>
+Date:   Thu Nov 9 18:42:39 2017 -0600
+
+    Create IDB2.log
+
 commit 9d18547d3613f019d8ff21bee2b38f10de68a1f0
 Author: jtrejo13 <jtrejo13@utexas.edu>
 Date:   Thu Nov 9 18:42:06 2017 -0600
