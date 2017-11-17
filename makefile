@@ -32,4 +32,4 @@ clean:
 
 test:
 	coverage run --branch tests.py
-	coverage report --include=models.py
+	coverage report --include=app/models.py

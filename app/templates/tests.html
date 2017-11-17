@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block head %}
+{% include "head.html" %}
+<title> nettunes-tests </title>
+<style>
+pre {
+	white-space: pre-wrap;
+	color: lightgray;
+}
+body {
+    background-color: black;
+    color: white;
+}
+
+</style>
+{% endblock %}
+
+{% block header %}
+{% include "navigation.html" %}
+{% endblock %}
+
+{% block content %}
+<div class="col-md-8">
+	<br/><h2>Test Output: </h2>
+    <br/><pre>
+    	<code class="bash">
+{{ output }}
+    	</code>
+    </pre>
+	<pre>
+		<code class="bash">
+coverage report --include=app/models.py
+Name            Stmts   Miss Branch BrPart  Cover
+-------------------------------------------------
+app/models.py      43      0      0      0   100%
+		</code>
+	</pre>
+</div>
+{% endblock %}

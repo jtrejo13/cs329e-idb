@@ -14,11 +14,14 @@
 #     Update #: 2
 # 
 
-
 from app import app
 from flask import render_template
 import subprocess
-import json
+from unittest import TextTestRunner, makeSuite
+from io import StringIO
+import tests as testClass
+
+
 
 @app.route('/about')
 def about():
@@ -26,7 +29,11 @@ def about():
 
 @app.route('/tests')
 def tests():
-	output = subprocess.getoutput("python tests.py")
-	return json.dumps({'output': str(output)})
+	stream = StringIO()
+	runner = TextTestRunner(stream=stream, verbosity=2)
+	suite = makeSuite(testClass.TestIDB)
+	result = runner.run(suite)
+	output = stream.getvalue()
+	return render_template("tests.html", output=output)
 
 
