@@ -4,7 +4,36 @@
 
 /* pager */
 
-/* overall */
+
+.search-bar{
+    position: relative;
+    width: 65%;
+    top: 0%;
+    left: 15%;
+    right: 15%;
+    margin: 0 0 2%;
+    font-size: 0.9em;
+    border-bottom: 0.2em solid #d9e6f2;
+    padding-bottom: 1%;
+}
+
+.search-bar h2{
+    display: inline-block;
+    margin: 0 2%;
+    font-style: italic;
+}
+
+.search-bar input{
+    width: 30%;
+    display: inline-block;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+.search-bar button{
+    display: inline-block;
+    margin: 0 0 0 2%;
+}
 
 .pager{
     position: relative;
@@ -14,7 +43,7 @@
     transform: translate(-50%, 0);    
     
 }
-
+/* overall */
 table{
     position: relative;
     margin: auto;

@@ -17,23 +17,24 @@
 
 
 <!-- searching -->
-<input class="search selectable" placeholder="Live table search" data-column="all" type="search">
-<!-- select to change data-column attribute of the above input -->
-<select class="change-input">
-  <option value="all">all</option>
-  <option value="0">Song</option>
-  <option value="1">Artist</option>
-  <option value="2">Album</option>
-  <option value="3">Rank</option>
-  <option value="4">Genre</option>
-  <option value="5">Release time</option>
-  <option value="6">Duration</option>
-</select>
-<br>
-
-<!-- targeted by the "filter_reset" option -->
-<button type="button" class="reset">Reset Search</button>
-
+,<div class="search-bar">
+  <h2> Search Nettunes </h2>
+  <input class="search selectable" placeholder="Live table search here..." data-column="all" type="search">
+  <!-- select to change data-column attribute of the above input -->
+  <select class="change-input">
+    <option value="all">all</option>
+    <option value="0">Song</option>
+    <option value="1">Artist</option>
+    <option value="2">Album</option>
+    <option value="3">Rank</option>
+    <option value="4">Genre</option>
+    <option value="5">Release time</option>
+    <option value="6">Duration</option>
+  </select>
+  
+  <!-- targeted by the "filter_reset" option -->
+  <button type="button" class="reset">Reset Search</button>
+</div>
 <!-- pager -->
 <div id="pager" class="pager">
   <form>
@@ -64,8 +65,8 @@
       {% endfor %}
     </tr>
   </thead>
-{% for key in songs %}
-<tr> 
+  {% for key in songs %}
+  <tr> 
     {% for column in tableTitles %}
     
     {% if column == "name" %}
@@ -79,14 +80,14 @@
 
     {% else %}
     <td>
-        {{key[column]}}
+      {{key[column]}}
     </td>
     
     {% endif %}
 
     {% endfor %}
-</tr>
-{% endfor %}
+  </tr>
+  {% endfor %}
 </table>
 
 {% endblock %}
