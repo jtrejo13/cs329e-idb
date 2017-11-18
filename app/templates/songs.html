@@ -17,19 +17,20 @@
 
 
 <!-- searching -->
-<input class="search selectable" placeholder="Search" data-column="all" type="search">
+<input class="search selectable" placeholder="Live table search" data-column="all" type="search">
 <!-- select to change data-column attribute of the above input -->
 <select class="change-input">
   <option value="all">all</option>
-  <option value="0,3">Columns 0,3</option>
-  <option value="1-2">Columns 1-2</option>
-  <option value="0">Rank</option>
-  <option value="1">First Name</option>
-  <option value="2">Last Name</option>
+  <option value="0">Song</option>
+  <option value="1">Artist</option>
+  <option value="2">Album</option>
+  <option value="3">Rank</option>
+  <option value="4">Genre</option>
+  <option value="5">Release time</option>
+  <option value="6">Duration</option>
 </select>
 <br>
-<input class="search" placeholder="First Name" data-column="1" type="search"><br>
-<input class="search" placeholder="Last Name" data-column="2" type="search"><br>
+
 <!-- targeted by the "filter_reset" option -->
 <button type="button" class="reset">Reset Search</button>
 
