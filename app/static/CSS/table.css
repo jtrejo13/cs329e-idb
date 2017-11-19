@@ -4,7 +4,42 @@
 
 /* pager */
 
-/* overall */
+
+.search-bar{
+    position: relative;
+    width: 65%;
+    top: 0%;
+    left: 15%;
+    right: 15%;
+    margin: 0 0 2%;
+    font-size: 0.8em;
+    border-bottom: 0.2em solid #d9e6f2;
+    padding-bottom: 1%;
+}
+
+.search-bar h2{
+    display: inline-block;
+    margin: 0 2%;
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+.search-bar input{
+    width: 30%;
+    display: inline-block;
+    margin: 0 0;
+    padding: 0 0;
+    border: 2px solid #b3d9ff;
+    transition: width 0.4s ease-in-out;
+}
+    
+.search-bar input:focus {
+    width: 50%;
+}
+.search-bar button{
+    display: inline-block;
+    margin: 0 0 0 2%;
+}
 
 .pager{
     position: relative;
@@ -15,6 +50,8 @@
     
 }
 
+
+/* overall */
 table{
     position: relative;
     margin: auto;
@@ -31,8 +68,8 @@ table{
     margin: 10px 0 15px;
     text-align: center;
     border-spacing: 0;
-    border: #cdcdcd 1px solid;
-    border-width: 1px 0 0 1px;
+    /*border: #cdcdcd 1px solid;
+    border-width: 1px 0 0 1px;*/
 }
 
 /* Comment to Disable border line 
@@ -50,7 +87,7 @@ table{
     font: 4vw, Arial, Sans-serif;
     font-weight: bold;
     color: #000;
-    background-color: #99bfe6;
+    text-transform: capitalize;
     border-collapse: collapse;
     padding: 4px;
     text-shadow: 0 1px 0 rgba(204, 204, 204, 0.7);
@@ -79,8 +116,8 @@ table{
 .tablesorter-blue .headerSortUp,
 .tablesorter-blue .tablesorter-headerSortUp,
 .tablesorter-blue .tablesorter-headerAsc {
-    background-color: #9fbfdf;
     /* black asc arrow */
+    
     background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjI8Bya2wnINUMopZAQA7);
     /* white asc arrow */
     /* background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAAP///////yH5BAEAAAEALAAAAAAVAAQAAAINjI8Bya2wnINUMopZAQA7); */
@@ -90,7 +127,6 @@ table{
 .tablesorter-blue .headerSortDown,
 .tablesorter-blue .tablesorter-headerSortDown,
 .tablesorter-blue .tablesorter-headerDesc {
-    background-color: #8cb3d9;
     /* black desc arrow */
     background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjB+gC+jP2ptn0WskLQA7);
     /* white desc arrow */
@@ -133,13 +169,14 @@ table{
 .tablesorter-blue tbody > tr.even:hover > td,
 .tablesorter-blue tbody > tr.even:hover + tr.tablesorter-childRow > td,
 .tablesorter-blue tbody > tr.even:hover + tr.tablesorter-childRow + tr.tablesorter-childRow > td {
-    background-color: #d9d9d9;
+    background-color: #CDFFFB;
+
 }
 .tablesorter-blue tbody > tr.odd.hover > td,
 .tablesorter-blue tbody > tr.odd:hover > td,
 .tablesorter-blue tbody > tr.odd:hover + tr.tablesorter-childRow > td,
 .tablesorter-blue tbody > tr.odd:hover + tr.tablesorter-childRow + tr.tablesorter-childRow > td {
-    background-color: #bfbfbf;
+    background-color: #CDFFFB;
 }
 
 /* table processing indicator */
@@ -152,13 +189,16 @@ table{
 
 /* Zebra Widget - row alternating colors */
 .tablesorter-blue tbody tr.odd > td {
-    background-color: #ebf2fa;
+    /*background-color: #ebf2fa;*/
+    background: linear-gradient(to right, white, #ebf2fa, white);
 }
 .tablesorter-blue tbody tr.even > td {
     background-color: #fff;
 }
 
 /* Column Widget - column sort colors */
+
+
 .tablesorter-blue td.primary,
 .tablesorter-blue tr.odd td.primary {
     background-color: #99b3e6;
@@ -256,3 +296,22 @@ caption {
     background-color: #e6bf99;
 }
 
+
+/* General settings, overide previous settings */
+.tablesorter tr td{
+    height: 3em;
+    border: none;
+    vertical-align: middle;
+}
+
+.tablesorter thead th{
+    font-style: normal;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #CB75FB;
+    border-bottom: 5px solid #5EADFF;
+    font-style: italic;
+}
+table{
+    background-image: none;
+}

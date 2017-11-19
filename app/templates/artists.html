@@ -15,6 +15,25 @@
 {% block content %}
 <h1> Artists </h1> </br>
 
+<!-- searching -->
+<div class="search-bar">
+  <h2> Search Nettunes </h2>
+  <input class="search selectable" placeholder="Live table search here..." data-column="all" type="search">
+  <!-- select to change data-column attribute of the above input -->
+  <select class="change-input">
+    <option value="all">all</option>
+    <option value="0">Artist</option>
+    <option value="1">Origin</option>
+    <option value="2">Genre</option>
+    <option value="3">Start</option>
+    <option value="4">Latest release</option>
+  </select>
+  
+  <!-- targeted by the "filter_reset" option -->
+  <button type="button" class="reset">Reset Search</button>
+</div>
+
+
 <!-- pager -->
 <div id="pager" class="pager">
   <form>
@@ -62,7 +81,8 @@
 </tr>
 {% endfor %}
 </table>
-<script src="{{ url_for('static', filename="JavaScript/tableConfig.js") }}"></script> 
+<!-- <script src="{{ url_for('static', filename="JavaScript/tableConfig.js") }}"></script> -->
+
 <!-- <table class="tablesorter">
   <thead>
     <tr>
