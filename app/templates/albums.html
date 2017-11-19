@@ -15,6 +15,26 @@
 {% block content %}
 <h1> Albums </h1><br>
 
+
+<!-- searching -->
+,<div class="search-bar">
+  <h2> Search Nettunes </h2>
+  <input class="search selectable" placeholder="Live table search here..." data-column="all" type="search">
+  <!-- select to change data-column attribute of the above input -->
+  <select class="change-input">
+    <option value="all">all</option>
+    <option value="0">Album</option>
+    <option value="1">Artist</option>
+    <option value="2">Release data</option>
+    <option value="3">Genre</option>
+    <option value="4">Number of Tracks</option>
+  </select>
+  
+  <!-- targeted by the "filter_reset" option -->
+  <button type="button" class="reset">Reset Search</button>
+</div>
+
+
 <!-- pager -->
 <div id="pager" class="pager">
   <form>
