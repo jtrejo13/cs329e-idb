@@ -3,6 +3,7 @@
 {% block head %}
 {% include "head.html" %}
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/about.css') }}"/>
+
 <title> nettunes-about </title>
 {% endblock %}
 
@@ -25,12 +26,12 @@
             <!-- bio info -->
             <div class = "member-area">
                 <h2>Juan Trejo</h2>
-                <em><p id = "bio">I am a graduate student in Mechanical Engineering and Scientific Computing. In my spare time I like to play basketball, and work on coding projects. My two main side projects now are creating an iOS application called Key and developing a MATLAB interpreter in C++.
-		    <br><br>Major Responsibilities: Team Leader, Splash Pager, Tester<br>
+                <p id = "bio"><em>I am a graduate student in Mechanical Engineering and Scientific Computing. In my spare time I like to play basketball, and work on coding projects. My two main side projects now are creating an iOS application called Key and developing a MATLAB interpreter in C++.
+		    <br><br></em>Major Responsibilities: Team Leader and Splash Pager<br>
                     No. of Commits: 42<br>
                     No. of Issues: 6<br>
                     No. of Unit Tests: 21<br> </p>
-		</em>
+
             </div>
         </div>
         
@@ -40,13 +41,13 @@
             </div>
             <div class = "member-area">
                 <h2>Yu Lu</h2>
-                <em><p id = "bio">I’m doing my Ph.D. in physics at UT Austin. While working on physics experiment to explore the unknowns, computer science is one of my biggest interest. Programming simplifies a lot of my daily experiment into a simple “click”. Automation of IoT devices and web development are the new islands that I’m exploring.
+                <p id = "bio"><em>I’m doing my Ph.D. in physics at UT Austin. While working on physics experiment to explore the unknowns, computer science is one of my biggest interest. Programming simplifies a lot of my daily experiment into a simple “click”. Automation of IoT devices and web development are the new islands that I’m exploring.</em>
                     <br><br>Major Responsibilities: CSS Wizard and Data Scraper<br>
                     No. of Commits: 39<br>
                     No. of Issues: 2<br>
                     No. of Unit Tests: 0<br>
                 </p>
-		</em>
+		
             </div>
         </div>
         
@@ -54,13 +55,13 @@
             <div><img src = "../static/img/team/Ruth.jpg" alt="Ruth's Headshot" height = "250" width = "250"></div>
             <div class = "member-area">
                 <h2>Ruth Mendez</h2>
-                <em><p>Ruth is a Sociology major who's working toward gaining the Elements of Computing Certificate. She is a self-employed face and body painter. Her career goal is to create her own animatronic props, from the software design that runs them to the prosthetic pieces applied to them.
-                    <br><br>Major Responsibilities: About Page and Doodler<br>
+                <p><em>I am a Sociology major who's working towards obtaining the Elements of Computing Certificate. I am also a self-employed face and body painter. My career goal is to build my own animatronic props, from developing the software that runs them to creating the prosthetic pieces applied to them.
+                    <br><br></em>Major Responsibilities: About Page and Doodler<br>
                     No. of Commits: 4<br>
                     No. of Issues: 0<br>
                     No. of Unit Tests: 0<br>
                 </p>
-		</em>
+		
             </div>
         </div>
     </div>
@@ -73,27 +74,27 @@
             <div><img src = "../static/img/team/Chris.jpg" alt="Chris's Headshot" height = "250" width = "250"></div>
             <div class = "member-area">
                 <h2>Chris Johnson</h2>
-                <em><p>I am UT alumni and a full time staff member in the Chemistry Department who, for some reason, spends my free time trying to learn computer science.  Instructor Fraij has shown incredible generosity by allowing me to audit this class and work on group projects.  Hopefully this class will be the last padding I need in my portfolio before I begin looking for jobs and internships in the spring.
+                <p><em>I am UT alumni and a full time staff member in the Chemistry Department who, for some reason, spends my free time trying to learn computer science.  Instructor Fraij has shown incredible generosity by allowing me to audit this class and work on group projects.  Hopefully this class will be the last padding I need in my portfolio before I begin looking for jobs and internships in the spring.</em>
                     <br><br>Major Responsibilities: Resident Jinja "Expert" and Model Maker<br>
                     No. of Commits: 19<br>
                     No. of Issues: 11<br>
                     No. of Unit Tests: 0<br>
                 </p>
-	        </em>
+	        
             </div>
         </div>
         
         <div class="col-sm-4">
             <div><img src = "../static/img/team/Rachel.jpg" alt="Rachel's Headshot" height = "250" width = "250"></div>
             <div class = "member-area">
-                <h2>Rachel Tarrant</h2>
-                <em><p>I am a senior Biology major pursuing the Elements of Computing Certificate. I am also in the Polymathic Scholars Honors program, which allowed me to design my own field of study called “The Science of Food and the Psychology of Eating.” I will be writing a thesis in this field next semester. Beyond my studies, I work as an undergraduate writing consultant and the University Writing Center and as a “salon coordinator” at Jose Luis Salon. 
+               <h2>Rachel Tarrant</h2>
+                <p><em>I am a senior Biology major pursuing the Elements of Computing Certificate. I am also in the Polymathic Scholars Honors program, which allowed me to design my own field of study called “The Science of Food and the Psychology of Eating.” I will be writing a thesis in this field next semester. Beyond my studies, I work as an undergraduate writing consultant and the University Writing Center and as a “salon coordinator” at Jose Luis Salon. </em>
                     <br><br>Major Responsibilities: Database Master, Model Maker and Wiki Writer<br>
                     No. of Commits: 17<br>
                     No. of Issues: 12<br>
                     No. of Unit Tests: 0<br>
                 </p>
-		</em>
+		
             </div>
 
         </div>
@@ -115,10 +116,6 @@
         <a href="https://github.com/jtrejo13/cs329e-idb/wiki" target="_blank">GitHub Wiki</a><br>
         </div>
         
-        <div class="col-lg-3 col-sm-6">
-        <h2>Data</h2>
-            Information on how data was scraped can be found <a href="https://github.com/superyulu/itunes-scrapy" target="_blank">here</a>.
-        </div>
 
         <div class="col-lg-3 col-sm-6">
         <h2>Tests</h2>
@@ -126,18 +123,35 @@
         </div>
         
         <div class="col-lg-3 col-sm-6">
+        <h2>Presentation</h2>
+            <a href="https://speakerdeck.com/mendezruth35">Speaker Deck</a>
+        </div>  
+        
+        <div class="col-lg-3 col-sm-6">
         <h2>Tools</h2>
+        <li>API
+            <ul><a href="https://github.com/superyulu/itunes-scrapy">iTunes Scrapy</a></ul>
+            <ul><a href="https://www.apple.com/itunes/">iTunes</a></ul>
+        </li>
         <li>Collaboration
             <ul><a href="https://slack.com/" target="_blank">Slack</a></ul>
             <ul><a href="https://github.com/" target="_blank">Github</a></ul>     
         </li>
+        <li>Database
+            <ul><a href="http://www.postgresql.org/">PostgreSQL</a></ul>
+        </li>
         <li>Front-end
             <ul><a href="http://getbootstrap.com/" target="_blank">Boostrap</a></ul>
             <ul><a href="http://flask.pocoo.org/" target="_blank">Flask</a></ul>
+            <ul><a href="http://jinja.pocoo.org/" target="_blank">Jinja</a></ul>
         </li>
         <li>Server/Hosting
             <ul><a href="https://nc.me/" target="_blank">Namecheap</a></ul>
             <ul><a href="https://cloud.google.com/" target="_blank">Google Cloud Platform</a></ul>
+        </li>
+        <li>Testing
+            <ul><a href="https://travis-ci.com/">Travis CI</a></ul>
+            <ul><a href="https://coverage.readthedocs.org/en/coverage-4.0.2/">Coverage</a></ul>
         </li>
         </div>
     </div>
