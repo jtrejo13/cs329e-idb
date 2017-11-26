@@ -55,7 +55,7 @@
 table{
     position: relative;
     margin: auto;
-    width: 100%;
+    width: 95%;
     top: 0%;
     left:50%;
     transform: translate(-50%, 0);    
