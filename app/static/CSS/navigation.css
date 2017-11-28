@@ -4,8 +4,8 @@ background-color: #212529; }
 #mainNav .navbar-toggler {
 font-size: 12px;
 right: 0;
-padding: 0;
-text-transform: lowercase;
+padding: 13px;
+text-transform: uppercase;
 color: white;
 border: 0;
 background-color: #fed136;
