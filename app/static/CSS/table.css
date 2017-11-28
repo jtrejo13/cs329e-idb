@@ -44,7 +44,7 @@
 .pager{
     position: relative;
     margin: auto;
-    width: 80%;
+    width: 100%;
     left:95%;
     transform: translate(-50%, 0);    
     
@@ -55,7 +55,7 @@
 table{
     position: relative;
     margin: auto;
-    width: 80%;
+    width: 95%;
     top: 0%;
     left:50%;
     transform: translate(-50%, 0);    
@@ -63,7 +63,7 @@ table{
 
 
 .tablesorter-blue {
-    width: 70%;
+    width: 95%;
     background-color: #fff;
     margin: 10px 0 15px;
     text-align: center;
