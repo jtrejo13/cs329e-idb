@@ -1,8 +1,4 @@
-__pycache__
 *~
-flask
-env/
-*pyc
-myEnv
-.coverage
-.idea/
+venv/
+*.log
+__pycache__/

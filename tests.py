@@ -9,12 +9,16 @@ from sqlalchemy import Column, ForeignKey, Integer, String, Text, Float, LargeBi
 
 from app.models import *
 
+import sys
+from scrapy.cmdline import execute
 Base.metadata.bind = engine
 DBSession = sessionmaker(bind=engine)
 session = DBSession()
 
 
 class TestIDB(TestCase):
+	
+		
 
 # -----------
 # Test Artists
@@ -399,7 +403,26 @@ class TestIDB(TestCase):
 		new_query = session.query(Songs).filter(Songs.name == 'SONGDEL').first()
 		self.assertTrue(new_query is None)
 
+	def test_scrapy_song(self):
+		sys.argv = 'scrapy crawl itunes_song'.split()
+		try:
+			execute()
+		except SystemExit:
+			pass
+	'''
+	def test_scrapy_album(self):
+		sys.argv = 'scrapy crawl itunes_album'.split()
+		try:
+			execute()
+		except SystemExit:
+			pass
 
-
+	def test_scrapy_artist(self):
+		sys.argv = 'scrapy crawl itunes_artist'.split()
+		try:
+			execute()
+		except SystemExit:
+			pass
+	'''
 if __name__ == "__main__":
 	main()
