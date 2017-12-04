@@ -1,0 +1,1116 @@
+commit 144540bd6c851b6ea3b1f14068d8377a52f3ae96
+Author: jtrejo13 <jtrejo13@utexas.edu>
+Date:   Tue Nov 28 14:46:34 2017 -0600
+
+    Update .gitignore
+
+commit 4a53fa13ac0ea16308b382d4759703e9b57636d3
+Author: jtrejo13 <jtrejo13@utexas.edu>
+Date:   Tue Nov 28 14:43:08 2017 -0600
+
+    Update .gitignore
+
+commit df48b8a5ed85b20306e83cd2ac1bfc9949139abb
+Author: Juan Trj <jtrejo13@utexas.edu>
+Date:   Tue Nov 28 14:40:07 2017 -0600
+
+    Update models.html
+
+commit c8c9c94be903e95155fb7b1c9fd5cb85c3e86b02
+Author: Juan Trj <jtrejo13@utexas.edu>
+Date:   Tue Nov 28 11:48:34 2017 -0600
+
+    Update .travis.yml
+
+commit 2a8d9404c83e094e2630d59527579ab26653d3da
+Author: Juan Trj <jtrejo13@utexas.edu>
+Date:   Tue Nov 28 11:35:31 2017 -0600
+
+    Update models.py
+
+commit b7a39bda63332fc616777a189228f6a710a37b27
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Tue Nov 28 10:59:28 2017 -0600
+
+    modified unit test
+
+commit 94ea6fbaa894091f13b463b0a2d42844effeb0b6
+Merge: 9bce755 4e80138
+Author: Juan Trj <jtrejo13@utexas.edu>
+Date:   Tue Nov 28 11:00:54 2017 -0600
+
+    Merge pull request #70 from jtrejo13/dev
+    
+    Dev
+
+commit 4e801384c9a7e560f54c6eb18699cc678629e5d1
+Merge: dd43c3c 9bce755
+Author: Juan Trj <jtrejo13@utexas.edu>
+Date:   Tue Nov 28 11:00:42 2017 -0600
+
+    Merge branch 'master' into dev
+
+commit dd43c3c708baf6fe8686a4ff507a9016a9cece16
+Merge: ac3228e 5122f5c
+Author: Yu Lu <physicsluyu@gmail.com>
+Date:   Tue Nov 28 10:57:19 2017 -0600
+
+    Merge pull request #69 from jtrejo13/css-general
+    
+    Css general
+
+commit 9bce755b64493d7f077cf75ac76e4ef5b0a00496
+Merge: aaf3169 6d401f8
+Author: Juan Trj <jtrejo13@utexas.edu>
+Date:   Tue Nov 28 10:55:43 2017 -0600
+
+    Merge pull request #68 from jtrejo13/jt_branch
+    
+    Minor Style Improvements
+
+commit 5122f5cda18d89ee8e15a0f64964af06f6c71b62
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Tue Nov 28 10:47:21 2017 -0600
+
+    add scrapy and unit test
+
+commit ac3228e61a72d9c1b3fa66c84e93e5f6c4cf220d
+Author: Ruth Mendez <mendezruth35@utexas.edu>
+Date:   Tue Nov 28 10:34:09 2017 -0600
+
+    Updated stats
+
+commit 6d401f81ef338fb34691cec93bcf008bab3b0eef
+Author: Juan Trj <jtrejo13@utexas.edu>
+Date:   Mon Nov 27 16:15:32 2017 -0600
+
+    Fix size of menu button in model pages
+
+commit 5bcba260ae655ff80d0c606052429511811755e8
+Author: Juan Trj <jtrejo13@utexas.edu>
+Date:   Mon Nov 27 15:56:02 2017 -0600
+
+    Update unit test count
+
+commit d0bc91cf3f5a0b30bdfabbd305def3fb76f63d33
+Author: Juan Trj <jtrejo13@utexas.edu>
+Date:   Mon Nov 27 15:37:06 2017 -0600
+
+    Update index.html
+
+commit 418aa1bebb51b64ae9ecb7e8c4945ddd48c8d4cb
+Author: Juan Trj <jtrejo13@utexas.edu>
+Date:   Mon Nov 27 15:20:03 2017 -0600
+
+    Fix large blank gap between 'Team' and 'Featured'
+
+commit 3893b962e022c21183afaa70d38e2e55716c0d91
+Author: Juan Trj <jtrejo13@utexas.edu>
+Date:   Sun Nov 26 22:07:54 2017 -0600
+
+    Update about.py
+
+commit 13c34a20308fad4f3b5c53183001e96cb4607237
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Sun Nov 26 14:48:16 2017 -0600
+
+    update merge from dev, table width set to 95%
+
+commit 906cc441e2099680aa131910b74059b2334530d0
+Merge: e8ed1c7 eb2840d
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Sun Nov 26 14:44:53 2017 -0600
+
+    Merge branch 'dev' of github.com:jtrejo13/cs329e-idb into css-general
+
+commit eb2840dd2e6e5920ab883b0bd5aa7f75870cf9be
+Author: Ruth Mendez <mendezruth35@utexas.edu>
+Date:   Sat Nov 25 00:06:19 2017 -0600
+
+    changed about.html
+
+commit 4f8cf75f5ffd902426cf36b71a9cbea135efb70f
+Merge: 2f81e00 0594270
+Author: Ruth Mendez <mendezruth35@utexas.edu>
+Date:   Fri Nov 24 23:13:27 2017 -0600
+
+    trying to merge
+
+commit 059427049664fdcd68e5144d85005a2c5a6e7514
+Author: Ruth Mendez <mendezruth35@utexas.edu>
+Date:   Fri Nov 24 23:02:25 2017 -0600
+
+    Added favicon.ico
+
+commit e8ed1c7dd1a66772a26697fa4214d5ca7c727b95
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Tue Nov 21 21:48:27 2017 -0600
+
+    wider table region
+
+commit 2f81e001f683295a4ad3fb85098a2514cf1bb044
+Merge: df29a3e 518cb4f
+Author: Yu Lu <physicsluyu@gmail.com>
+Date:   Sun Nov 19 16:48:46 2017 -0600
+
+    Merge pull request #64 from jtrejo13/table-search
+    
+    Table search
+
+commit 518cb4f8c7455cb3abef21a8a23582afa49f4fe1
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Sun Nov 19 16:34:58 2017 -0600
+
+    modifed table sorting config
+
+commit 223951f9c6e957622615d1e61a41b6053de0e693
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Sun Nov 19 13:16:51 2017 -0600
+
+    remove venv
+
+commit a5cfcac6d626f8cae5c22babae994ee614d3de57
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Sat Nov 18 20:31:59 2017 -0600
+
+    add search bar to artists, albums, restyle table
+
+commit 62dba63e88352d21b8087e6ff2a5999ff9fa0ad9
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Sat Nov 18 17:33:10 2017 -0600
+
+    done table search with songs
+
+commit 2234dd8ade47ff2844f55735bf1fda4d6d893809
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Sat Nov 18 16:47:53 2017 -0600
+
+    made live search work for songs
+
+commit f65163f5e5a7313ba0b4867e229cf06b1215d32d
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Sat Nov 18 15:48:37 2017 -0600
+
+    modified .gitignore
+
+commit e20f52bed919683c8238658a70d36e4a55f84036
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Fri Nov 17 00:46:02 2017 -0600
+
+    add table search test in songs.html
+
+commit df29a3e55977d607e30fc712df8c7b77a10bbb23
+Merge: 8c29b85 aaf3169
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Fri Nov 17 00:44:18 2017 -0600
+
+    update dev from master
+
+commit aaf31695c50afe7b41a147aa87f6de276fa26af8
+Author: jtrejo13 <jtrejo13@utexas.edu>
+Date:   Thu Nov 9 20:10:44 2017 -0600
+
+    Update IDB2.log
+
+commit dee25cd055a636b4fe8e2d29be5cf1b9671f0fd0
+Author: jtrejo13 <jtrejo13@utexas.edu>
+Date:   Thu Nov 9 20:10:06 2017 -0600
+
+    Create models.html
+
+commit 8c29b85dfc8ec0ce32b0a0e10f92c83e78a908f3
+Merge: 41a9930 55c23d0
+Author: Yu Lu <physicsluyu@gmail.com>
+Date:   Thu Nov 9 19:52:59 2017 -0600
+
+    Merge pull request #44 from jtrejo13/css2
+    
+    Css2
+
+commit 55c23d02b6cc565734a5078adf3c3c1429bc7e74
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Thu Nov 9 19:43:21 2017 -0600
+
+    modified indiv album sytle
+
+commit f1cc48aca1bdc3a97eeec11c91a5d6b5ad6f71f7
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Thu Nov 9 19:37:34 2017 -0600
+
+    modifed indiv artist style
+
+commit 6a3e57d0b085948fad7edfb5f1248fc027dca0b2
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Thu Nov 9 19:14:31 2017 -0600
+
+    reformat indiv songs page
+
+commit 2841a02e60cff172c8b0b50ec389ac343f6ac889
+Merge: 0162cbc f7c32d4
+Author: Juan Trj <jtrejo13@utexas.edu>
+Date:   Thu Nov 9 18:48:13 2017 -0600
+
+    Merge pull request #43 from jtrejo13/improveAbout
+    
+    Improve About Page and Fix Tests Page
+
+commit f7c32d4eb132ac9589797b6008574137861da49b
+Author: jtrejo13 <jtrejo13@utexas.edu>
+Date:   Thu Nov 9 18:42:39 2017 -0600
+
+    Create IDB2.log
+
+commit 9d18547d3613f019d8ff21bee2b38f10de68a1f0
+Author: jtrejo13 <jtrejo13@utexas.edu>
+Date:   Thu Nov 9 18:42:06 2017 -0600
+
+    Update stats in About page and format in Tests page
+
+commit 43c74f1d397b6f99ea2ab2d9a6a314783be0be6c
+Author: Juan Trejo <jtrejo13@utexas.com>
+Date:   Thu Nov 9 18:13:36 2017 -0600
+
+    Remove .idea
+
+commit 854c6ac1bdf4a8c998374adc3740532c042a0b0c
+Author: Juan Trejo <jtrejo13@utexas.com>
+Date:   Thu Nov 9 18:09:15 2017 -0600
+
+    Create tests.html to show unit tests and update About with scraping info
+
+commit 41a9930536c166787df70e2261f9dc686d23ac72
+Author: Chris Johnson <cjohnson@cm.utexas.edu>
+Date:   Thu Nov 9 14:08:07 2017 -0600
+
+    removed .idea garbage
+
+commit 0162cbccf2e3762a5cda3761c0259540bbad7006
+Merge: 41c78b8 f417e77
+Author: Yu Lu <physicsluyu@gmail.com>
+Date:   Thu Nov 9 11:49:37 2017 -0600
+
+    Merge pull request #41 from jtrejo13/dev
+    
+    Dev
+
+commit f417e77031703dcd1c27aab1150f7c2f45fb26dd
+Merge: b0564b0 c0e142f
+Author: Juan Trj <jtrejo13@utexas.edu>
+Date:   Thu Nov 9 11:32:17 2017 -0600
+
+    Merge pull request #40 from jtrejo13/unittest
+    
+    Unittest
+
+commit b0564b06777867f6019d8bd7c0e0252294671c80
+Merge: dcc75a5 6be3534
+Author: Yu Lu <physicsluyu@gmail.com>
+Date:   Thu Nov 9 11:28:39 2017 -0600
+
+    Merge pull request #39 from jtrejo13/css
+    
+    CSS
+
+commit 6be35340b19e2720cb69cf6100e3b1a3a0604289
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Thu Nov 9 11:19:27 2017 -0600
+
+    fixed bunch of stuff
+
+commit c0e142f50829edd47ac50856a38bac5d9cf4f9c5
+Author: Juan <jtrj33@gmail.com>
+Date:   Thu Nov 9 11:13:29 2017 -0600
+
+    Update tests.py
+
+commit 72adeceb07a6c6ae8f43c6e52432f998badfbcf0
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Thu Nov 9 02:12:45 2017 -0600
+
+    add album-indiv.css
+
+commit 9059404c3c1517d4f0673ac251f76a6eaf769284
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Thu Nov 9 01:47:58 2017 -0600
+
+    add artist-indiv.html
+
+commit ba331283849106a208fa2cdeef20fbf01be450b1
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Thu Nov 9 01:29:56 2017 -0600
+
+    add song-indiv.css
+
+commit 0038a3b51358b76f7bec26c7b7e03541f15e0101
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Thu Nov 9 00:48:02 2017 -0600
+
+    add pagination to tables
+
+commit f4bcb8b896a210883a9cc9258aa08b1ecb15cac4
+Author: Juan <jtrj33@gmail.com>
+Date:   Wed Nov 8 22:04:53 2017 -0600
+
+    Add unit test link in about page
+
+commit cf79bb7ebb840ac789cd2209f61be1e8a9a89da7
+Author: Juan <jtrj33@gmail.com>
+Date:   Wed Nov 8 21:39:58 2017 -0600
+
+    Update tests.py
+
+commit 7ff17da0e2b4ca3f4940fadd9431876a1dca0186
+Author: Juan <jtrj33@gmail.com>
+Date:   Wed Nov 8 21:29:34 2017 -0600
+
+    Update tests.py
+
+commit 4c1c4c3740d4ff86a83d27372e796b2dfc43a690
+Author: Juan <jtrj33@gmail.com>
+Date:   Wed Nov 8 21:22:21 2017 -0600
+
+    Update tests.py
+
+commit 351fc284b1983ab973221d5fe6dcdf07c7853ef0
+Author: Juan <jtrj33@gmail.com>
+Date:   Wed Nov 8 21:17:06 2017 -0600
+
+    Update tests.py
+
+commit 0c64d82f9b989fe56a15b05699d7b56996587d57
+Author: Juan <jtrj33@gmail.com>
+Date:   Wed Nov 8 21:11:54 2017 -0600
+
+    Update tests.py
+
+commit ced32a05f459e25727bf447a0f387a549b635b76
+Author: tarrantrl-lt\Rachel <tarrantrl@utexas.edu>
+Date:   Wed Nov 8 20:36:03 2017 -0600
+
+    added links to artist and album tables
+
+commit 5cbf6d5b480ae3ab7352b9721ccfe12f85e36861
+Author: Chris Johnson <cjohnson@cm.utexas.edu>
+Date:   Wed Nov 8 20:28:50 2017 -0600
+
+    finished album-indiv.html and added some links
+
+commit 8bfd443d129984ae883c5448de5955da0deae615
+Author: Juan <jtrj33@gmail.com>
+Date:   Wed Nov 8 20:27:04 2017 -0600
+
+    Update tests.py
+
+commit 91ed15f29723009d1a6c97c4464a31b59240d224
+Author: Juan <jtrj33@gmail.com>
+Date:   Wed Nov 8 20:25:49 2017 -0600
+
+    Update tests.py
+
+commit a858dd9540964fce836929a1379935a19b4ac10a
+Author: Juan <jtrj33@gmail.com>
+Date:   Wed Nov 8 20:10:22 2017 -0600
+
+    Update tests.py
+
+commit 1a7973ebcc6116a010aa5156a5ddbcd45d1531cb
+Author: Juan <jtrj33@gmail.com>
+Date:   Wed Nov 8 19:32:53 2017 -0600
+
+    Update tests.py
+
+commit 739af4917989133e21d278f45bde3e9521279fcb
+Author: Juan <jtrj33@gmail.com>
+Date:   Wed Nov 8 19:27:26 2017 -0600
+
+    Update tests.py
+
+commit 8f355159689916236fff3dfda610226484f0e80d
+Author: Juan <jtrj33@gmail.com>
+Date:   Wed Nov 8 19:22:46 2017 -0600
+
+    Update tests.py
+
+commit 6a2fec437a64f4e2f6defe9f75fa4dac33da7e7d
+Author: Juan <jtrj33@gmail.com>
+Date:   Wed Nov 8 19:20:01 2017 -0600
+
+    Update tests.py
+
+commit c794b13e61ff4593028105afad229aa5a0c96a7d
+Author: Juan <jtrj33@gmail.com>
+Date:   Wed Nov 8 19:15:49 2017 -0600
+
+    Update tests.py
+
+commit fa69d616691251dda12d5a41c0708fa0dc8e29bc
+Author: Juan <jtrj33@gmail.com>
+Date:   Wed Nov 8 19:12:08 2017 -0600
+
+    Update tests.py
+
+commit 60a670b46768f71ddfc79eb8c2bc0428f3f8d046
+Author: Juan <jtrj33@gmail.com>
+Date:   Wed Nov 8 19:09:38 2017 -0600
+
+    Update tests.py
+
+commit 8f8a8bdc79febc70d2521608c6f956d99ba24309
+Author: Juan <jtrj33@gmail.com>
+Date:   Wed Nov 8 19:02:20 2017 -0600
+
+    Update tests.py
+
+commit d312439dd519ff0c71dad82e51dc3741466e7e5a
+Author: Juan <jtrj33@gmail.com>
+Date:   Wed Nov 8 18:58:45 2017 -0600
+
+    Modify makefile and tests.py
+
+commit 26a7d02a076c59d8305825f6d8ddeb924fc4396a
+Author: Juan <jtrj33@gmail.com>
+Date:   Wed Nov 8 18:44:53 2017 -0600
+
+    Modify tests.py
+
+commit add948923e0c1b02034fefa3d4e769c2e49e35fc
+Author: Juan <jtrj33@gmail.com>
+Date:   Wed Nov 8 18:42:45 2017 -0600
+
+    Modify tests.py
+
+commit fd980687c0ebe7b0a3ebb48e54827480132e1011
+Author: Juan <jtrj33@gmail.com>
+Date:   Wed Nov 8 18:39:18 2017 -0600
+
+    Add makefile and tests.py. Modify .travis.yml
+
+commit dcc75a5bebcbcd6ccda85953c8772163e9f2025e
+Author: Chris Johnson <cjohnson@cm.utexas.edu>
+Date:   Wed Nov 8 17:13:21 2017 -0600
+
+    bunch of stuff
+
+commit 3f553fcc5d63419414b70e7e905e94e96169f652
+Author: tarrantrl-lt\Rachel <tarrantrl@utexas.edu>
+Date:   Wed Nov 8 11:52:39 2017 -0600
+
+    changed yaml file
+
+commit 3c473ab56365446cf91d84f3c7042690a4059604
+Author: tarrantrl-lt\Rachel <tarrantrl@utexas.edu>
+Date:   Tue Nov 7 18:38:25 2017 -0600
+
+    added app.yaml stuff
+
+commit e9b7ae14a77124eb186140ead968b5e68d627ce5
+Author: tarrantrl-lt\Rachel <tarrantrl@utexas.edu>
+Date:   Tue Nov 7 15:57:02 2017 -0600
+
+    commit before trying to change __init__ file
+
+commit 07f4349e2989e3cc65dee6201fe4613c366a8ec2
+Merge: f40cf6f ee0167d
+Author: tarrantrl-lt\Rachel <tarrantrl@utexas.edu>
+Date:   Tue Nov 7 12:42:43 2017 -0600
+
+    Merge branch 'database' of https://github.com/jtrejo13/cs329e-idb into database
+
+commit f40cf6fada143d0606be68a2081c03c966a184cb
+Author: tarrantrl-lt\Rachel <tarrantrl@utexas.edu>
+Date:   Tue Nov 7 12:42:14 2017 -0600
+
+    added links to songs.html, created artist and song template
+
+commit ee0167d2a4871757563f68dfce46de758ec942f8
+Author: Juan Trj <jtrejo13@utexas.edu>
+Date:   Mon Nov 6 14:38:45 2017 -0600
+
+    Update README.md
+
+commit 1a6834843960088a60e99b54fdc8bf3793e4bcf4
+Author: tarrantrl-lt\Rachel <tarrantrl@utexas.edu>
+Date:   Mon Nov 6 14:11:10 2017 -0600
+
+    created albums in models.py and build_db.py, updated albums.html and albums.py
+
+commit ff1f63f1917eb8f70661fbabda98244f3fb12799
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Mon Nov 6 13:39:03 2017 -0600
+
+    add itunes_albums.json
+
+commit 35de760198e7a4a8c440cc5a523d2734503c8102
+Author: tarrantrl-lt\Rachel <tarrantrl@utexas.edu>
+Date:   Mon Nov 6 09:26:29 2017 -0600
+
+    added artist model, artist db table, and artist html table
+
+commit 7ff6d69b5479f5ba15a69fc4181e5451f4e65934
+Author: tarrantrl-lt\Rachel <tarrantrl@utexas.edu>
+Date:   Sun Nov 5 20:49:39 2017 -0600
+
+    fixed app.models and app.build_db in each python file
+
+commit 20221686367c73de3ec507faf686255867be1230
+Author: mendezruth35 <31608985+mendezruth35@users.noreply.github.com>
+Date:   Sun Nov 5 19:05:14 2017 -0600
+
+    used database to make song table
+
+commit 0c67e23bc4a62ab52fdaf31c32197127f33d1422
+Author: mendezruth35 <31608985+mendezruth35@users.noreply.github.com>
+Date:   Sun Nov 5 19:03:03 2017 -0600
+
+    updated model.py
+
+commit b1c32df594b8235f2d08e2b404908689eea834c3
+Merge: 094efb5 e6d2f1f
+Author: Chris Johnson <cjohnson@cm.utexas.edu>
+Date:   Sun Nov 5 18:34:20 2017 -0600
+
+    Merge branch 'database' of https://github.com/jtrejo13/cs329e-idb into database
+
+commit 094efb59129c663d248c6124f91397e77275da98
+Author: Chris Johnson <cjohnson@cm.utexas.edu>
+Date:   Sun Nov 5 18:33:39 2017 -0600
+
+    random stuff
+
+commit e6d2f1f6a2e1f41b746a08dcf4708ea533d4ddc9
+Author: tarrantrl <31635666+tarrantrl@users.noreply.github.com>
+Date:   Sun Nov 5 17:09:22 2017 -0600
+
+    Updated songs.py to use database
+
+commit 55fd8bde9b2c3878d2f86ff982ed21c8e5c707d7
+Author: tarrantrl <31635666+tarrantrl@users.noreply.github.com>
+Date:   Sun Nov 5 17:08:38 2017 -0600
+
+    Added import app statement
+
+commit 5e3b8c06ae6bd74795351ef75f0fe83ff0a4d96b
+Author: tarrantrl <31635666+tarrantrl@users.noreply.github.com>
+Date:   Sun Nov 5 17:06:07 2017 -0600
+
+    Updated albums.py to use database
+
+commit c89e2050d4c69b63529f41e8155883f01ca9df99
+Author: tarrantrl <31635666+tarrantrl@users.noreply.github.com>
+Date:   Sun Nov 5 17:03:59 2017 -0600
+
+    Updated artists.py to use database
+
+commit a8b8d19c4ccb90b47db76df3298ca1b8e62ce698
+Author: Chris Johnson <cjohnson@cm.utexas.edu>
+Date:   Sun Nov 5 16:57:53 2017 -0600
+
+    build_db updated with create_songs
+
+commit 5e517ac861ac0a60d40f0498f65b7ced84c2d126
+Author: Chris Johnson <cjohnson@cm.utexas.edu>
+Date:   Sun Nov 5 16:44:03 2017 -0600
+
+    added itunes_songs.json
+
+commit e2a4b281db07fb144300f0cab0e2a35da660f252
+Author: Chris Johnson <cjohnson@cm.utexas.edu>
+Date:   Sun Nov 5 16:41:36 2017 -0600
+
+    models.py updated again
+
+commit 9b49d71e6bb5ab39e3ee3ca9c21147fe63685ef8
+Author: Chris Johnson <cjohnson@cm.utexas.edu>
+Date:   Sun Nov 5 16:29:34 2017 -0600
+
+    models.py updated with Songs base complete, build_db added
+
+commit 68ded2e0b98cf05b476211e1ac27d28f6e0fe267
+Author: Chris Johnson <cjohnson@cm.utexas.edu>
+Date:   Fri Nov 3 17:41:00 2017 -0500
+
+    added models.py
+
+commit ab2fec5264d3dd23dce5c3f41f1ddd5e43d6070e
+Author: Chris Johnson <cjohnson@cm.utexas.edu>
+Date:   Fri Nov 3 15:47:25 2017 -0500
+
+    added artists.json
+
+commit a7d9cfe834ed23283792a5bc4aef0ce0573ac08a
+Author: Chris Johnson <cjohnson@cm.utexas.edu>
+Date:   Fri Nov 3 14:45:18 2017 -0500
+
+    Updated about and main.py and requirements.txt
+
+commit 869d775fcfa41a74d32e9b849d9c4a58612ce684
+Author: Chris Johnson <cjohnson@cm.utexas.edu>
+Date:   Fri Nov 3 14:13:06 2017 -0500
+
+    added .travis.yml
+
+commit 8f701464fb7e617c0b147451dfb6b767f130ea09
+Author: Chris Johnson <cjohnson@cm.utexas.edu>
+Date:   Fri Nov 3 13:58:09 2017 -0500
+
+    updated readme port#
+
+commit 41c78b8d784a09efce7f1b66e34c2349ed5ad458
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Fri Oct 27 01:22:12 2017 -0500
+
+    fix gcp gateway error
+
+commit 77cd6d07f0f21044f930312f436910dfe1bc4c5b
+Author: Juan <jtrj33@gmail.com>
+Date:   Thu Oct 26 21:21:00 2017 -0500
+
+    Add IDB1.log
+
+commit fe3ea1d10d883b40dd37c84f713ad379598ff71f
+Author: Juan <jtrj33@gmail.com>
+Date:   Thu Oct 26 20:42:38 2017 -0500
+
+    Fix broken links from splash page
+
+commit 727abfe3e56107a8c53619e26eeab3d2e4912480
+Author: Juan Trj <jtrejo13@utexas.edu>
+Date:   Thu Oct 26 20:40:30 2017 -0500
+
+    Update about.html
+
+commit 5b9ea84f51b4e77de94a76dffbd5d05a0f47da66
+Author: Juan Trj <jtrejo13@utexas.edu>
+Date:   Thu Oct 26 20:35:12 2017 -0500
+
+    Update about.html
+
+commit 8c0fa0fa6a081135b8837ef22a13855f9d7293d7
+Author: Juan Trj <jtrejo13@utexas.edu>
+Date:   Thu Oct 26 20:20:24 2017 -0500
+
+    Update about.html
+
+commit 469db2266f447cb35527d0fe025e3d95e771c457
+Author: Juan Trj <jtrejo13@utexas.edu>
+Date:   Thu Oct 26 19:57:35 2017 -0500
+
+    Update head.html
+
+commit bc4162eb5846ad954f2cf653ae491a30827f5d77
+Merge: 070b2cd 62a6032
+Author: Yu Lu <physicsluyu@gmail.com>
+Date:   Thu Oct 26 17:02:38 2017 -0500
+
+    Merge pull request #24 from jtrejo13/dev
+    
+    Project phase 1 development finished
+
+commit 62a6032c8373b87bfd1cb713072bc3c339bb346a
+Merge: d153a58 bc2d321
+Author: Yu Lu <physicsluyu@gmail.com>
+Date:   Thu Oct 26 16:58:30 2017 -0500
+
+    Merge pull request #23 from jtrejo13/css_phase3
+    
+    Style subpages for individual link done
+
+commit bc2d32101d7f2377c1458bbe7e4d5e7992e5edf8
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Thu Oct 26 16:54:06 2017 -0500
+
+    add CSS to albums and bands
+
+commit fbc7697470f19aa94374b3913330ab9b769c9648
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Thu Oct 26 16:33:30 2017 -0500
+
+    fix css for songs
+
+commit d153a58e0eb1d5f55fa36b7e704fc428f7c2d48b
+Author: Juan <jtrj33@gmail.com>
+Date:   Thu Oct 26 11:45:01 2017 -0500
+
+    Update .gitignoreupdate references to pictures. Update Juan Bio
+
+commit 2147d81e6a317b6eb1979f8e4b04f21254a3e96c
+Merge: 9d63083 ec35f77
+Author: Yu Lu <physicsluyu@gmail.com>
+Date:   Thu Oct 26 11:28:11 2017 -0500
+
+    Merge pull request #21 from jtrejo13/fixdev
+    
+    fixed splash and dev conficts
+
+commit ec35f775dcc9ca367d5aa20f58f5e372cd1e7ffc
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Thu Oct 26 11:19:54 2017 -0500
+
+    fixed splash and dev conficts
+
+commit 9d63083477c1fd40e0edd376425945d699297ae8
+Merge: 3ae9828 3b38b8c
+Author: Yu Lu <physicsluyu@gmail.com>
+Date:   Thu Oct 26 10:53:39 2017 -0500
+
+    Merge pull request #18 from jtrejo13/CSS_phase2
+    
+    CSS  phase2 , add subsubpages.css, tested on one subsubpage, need to apply to all others
+
+commit 3b38b8cbc6858c553824da5448a98d04e415fc03
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Thu Oct 26 10:42:54 2017 -0500
+
+    add subsubpages.css
+
+commit ee255e80b0856c577bfb632dbdd1a5fc740502d0
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Thu Oct 26 09:36:10 2017 -0500
+
+    add header footer to subsubpages
+
+commit 2d8d2ba9a812ef1a7e2d27da7083808238740455
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Thu Oct 26 00:53:29 2017 -0500
+
+    modified about page CSS and html
+
+commit 77a8d907250a8037311222d45a4acd346c6f0ab3
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Wed Oct 25 23:45:47 2017 -0500
+
+    modified base.html, enable flexible styling
+
+commit 3ae9828e1e63c81a074c1ccf2411ad0253c1e6c6
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Wed Oct 25 22:54:08 2017 -0500
+
+    remove unnecessary packages
+
+commit 7797402b2f43a52020cfff20a7aa6b97283a79d1
+Merge: 5323bf2 0ec4270
+Author: Yu Lu <physicsluyu@gmail.com>
+Date:   Wed Oct 25 22:40:21 2017 -0500
+
+    Merge pull request #17 from jtrejo13/subsubpage_linking
+    
+    Subsubpage linking finished
+
+commit 0ec4270c2b075b22da6768a9876314ce7a91a73b
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Wed Oct 25 22:28:28 2017 -0500
+
+    add extra links close #16
+
+commit 66f0bce379c0c53c1b88b40485bb9901acebd1d2
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Wed Oct 25 22:17:36 2017 -0500
+
+    fix two broken links
+
+commit 0c19cc4f84f5c61e7685b17775876f39ceaa5d3b
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Wed Oct 25 22:14:27 2017 -0500
+
+    rename data htmls, line subsubpages
+
+commit 2640ce47df6603789a683e0e4888cedc32c61e94
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Wed Oct 25 20:44:01 2017 -0500
+
+    remove test.py
+
+commit 5323bf2d39d27f9b0e3dadec567bfe3085429a59
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Tue Oct 24 23:05:10 2017 -0500
+
+    modifed jquery import
+
+commit bbf6c74376213cc5ceef5da6b2bdd5c618f2287f
+Merge: 43dacd2 efeaa52
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Tue Oct 24 22:40:03 2017 -0500
+
+    merge with table-improve
+
+commit 43dacd2523379fc49d94a4b929b58dfed423d0ee
+Merge: 69ccc29 0046338
+Author: Juan <jtrj33@gmail.com>
+Date:   Tue Oct 24 22:40:11 2017 -0500
+
+    Merge branch 'splash' into dev
+
+commit 00463382d87cd5c8fc16549e1fdc638bfce9369b
+Merge: 03bfbd6 69ccc29
+Author: Juan <jtrj33@gmail.com>
+Date:   Tue Oct 24 22:36:04 2017 -0500
+
+    Merge branch 'dev' of https://github.com/jtrejo13/cs329e-idb into splash
+
+commit 03bfbd6763a3668a3cfa7d0758d6dbc7f9a60705
+Author: Juan <jtrj33@gmail.com>
+Date:   Tue Oct 24 22:34:59 2017 -0500
+
+    delete untracked files
+
+commit 69ccc29123f4ae02609cad65d5fcee06c5fccae6
+Author: Ruth Mendez <mendezruth35@utexas.edu>
+Date:   Tue Oct 24 22:31:41 2017 -0500
+
+    Added some headshots.
+
+commit efeaa5270e7ba34b6615e441fd957d1ab8bcb4bc
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Tue Oct 24 22:31:05 2017 -0500
+
+    fomart table position
+
+commit 485577a358ccf13baac3d8f078bd8ec26c45b1cb
+Author: Juan <jtrj33@gmail.com>
+Date:   Tue Oct 24 22:29:27 2017 -0500
+
+    Add splash page. Update navigation bar and footer in rest of website
+
+commit be0d29f2d3ec4469a4c5d3cef106ae0306cba9ac
+Author: Ruth Mendez <mendezruth35@utexas.edu>
+Date:   Tue Oct 24 22:16:13 2017 -0500
+
+    About.html updated.
+
+commit 5381f3481bef3d25790f379961d6f368f67211da
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Tue Oct 24 21:54:58 2017 -0500
+
+    add javascript tableConfig.js
+
+commit 2fddc9882baf784aa3f99e24db92f9f3557dd23a
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Tue Oct 24 20:52:49 2017 -0500
+
+    add table sort javascript
+
+commit e506e9089d79984cccd5d0d3dc83ec26cad9853e
+Author: Chris Johnson <cjohnson@cm.utexas.edu>
+Date:   Tue Oct 24 19:43:13 2017 -0500
+
+    genius and youtube links open in new window Closes#12
+
+commit 070b2cd259cf7ffd14b9ba2a07a846054efe4e51
+Author: Juan Trj <jtrejo13@utexas.edu>
+Date:   Tue Oct 24 19:04:22 2017 -0500
+
+    Update installation and execution instructions
+
+commit 1846149e2af30ade7b69ee9bbae599f526d66999
+Merge: 5f1fa15 3aaa542
+Author: Juan <jtrj33@gmail.com>
+Date:   Tue Oct 24 18:37:50 2017 -0500
+
+    Merge branch 'master' of https://github.com/jtrejo13/cs329e-idb into splash
+
+commit 3aaa542118c718015be498dc30d83be2fbc5af29
+Author: Juan Trj <jtrejo13@utexas.edu>
+Date:   Tue Oct 24 17:35:32 2017 -0500
+
+    Update README.md
+
+commit fede76d1038b05133e54a80d9ad471d398678c21
+Author: Juan Trj <jtrejo13@utexas.edu>
+Date:   Tue Oct 24 17:35:06 2017 -0500
+
+    Update README.md
+
+commit 5f1fa151c09222f411c15d0a36b3cdb896df63a3
+Author: Chris Johnson <cjohnson@cm.utexas.edu>
+Date:   Tue Oct 24 17:16:06 2017 -0500
+
+    setup flask links and about.html framework
+
+commit c9c44a23d4321f8039b6ca7add194f36a4f808e0
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Tue Oct 24 01:56:20 2017 -0500
+
+    responsive pages CSS implement
+
+commit facf98f0267b7cbc551d112bac30d1625721f906
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Tue Oct 24 01:40:55 2017 -0500
+
+    first commit CSS_1
+
+commit fb76e0280f9be952772a5fed0aaaaf625b00cec3
+Author: Chris Johnson <crjohn14@users.noreply.github.com>
+Date:   Mon Oct 23 19:03:17 2017 -0500
+
+    added onerepublic.html
+
+commit 092addfa231106a7fa371e8f43528855b61f6b81
+Author: tarrantrl <31635666+tarrantrl@users.noreply.github.com>
+Date:   Mon Oct 23 18:53:37 2017 -0500
+
+    Added artist page templates
+
+commit 8abb574d2f84ac23e285dcee8a45f810f8f54e64
+Author: tarrantrl <31635666+tarrantrl@users.noreply.github.com>
+Date:   Mon Oct 23 18:35:31 2017 -0500
+
+    Removed "by:" in band name
+
+commit 8e506febb52dd2c31d515500f35654d92a0f1358
+Author: tarrantrl <31635666+tarrantrl@users.noreply.github.com>
+Date:   Mon Oct 23 18:28:50 2017 -0500
+
+    Added album page templtes
+
+commit 780fa5b7983f826b5b8271e3a761b2fd2063a917
+Author: tarrantrl <31635666+tarrantrl@users.noreply.github.com>
+Date:   Mon Oct 23 18:23:20 2017 -0500
+
+    Fixed capitalization of "upon"
+
+commit 769be2fa62712b739f65da3914fc72831badcd7d
+Author: tarrantrl <31635666+tarrantrl@users.noreply.github.com>
+Date:   Mon Oct 23 17:56:17 2017 -0500
+
+    Added song page templates
+
+commit 9bc5290d1b9d86deb7066ccbb9a9faf27433f6dc
+Author: Chris Johnson <cjohnson@cm.utexas.edu>
+Date:   Mon Oct 23 17:47:45 2017 -0500
+
+    added nineinchnails.html
+
+commit 76c3df27d2e0ccd692284df01b340e22c88c62af
+Author: Chris Johnson <cjohnson@cm.utexas.edu>
+Date:   Mon Oct 23 17:01:34 2017 -0500
+
+    prettyhatemachine.html added
+
+commit b306964c2f1848f97f069d76f9dfd289f0fb01a6
+Author: Chris Johnson <cjohnson@cm.utexas.edu>
+Date:   Mon Oct 23 16:58:30 2017 -0500
+
+    headlikeahole.html added
+
+commit b37de6b5eddc6f2a698553455c231e9fa19e5db8
+Author: Yu Lu <yulu@cs.utexas.edu>
+Date:   Sun Oct 22 17:20:26 2017 -0500
+
+    delete flask_setup branch
+
+commit 494b62dd1e0881a46046ac05462b5a8db2c51c4b
+Merge: 579f37f c93b550
+Author: Yu Lu <physicsluyu@gmail.com>
+Date:   Sun Oct 22 17:10:45 2017 -0500
+
+    Merge pull request #2 from jtrejo13/flask_setup
+    
+    General setup of our webpage, list everyone's task
+
+commit c93b550ba8439b42c79203e9e54c032c75cae477
+Author: Yu Lu <yulu@cs.utexas.edu>
+Date:   Sun Oct 22 17:07:11 2017 -0500
+
+    last update on branch flask_setup
+
+commit 3522df27c8d24753d3097c5fb5e06ea19de0fa60
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Sun Oct 22 16:21:57 2017 -0500
+
+    update general page layout and member's task
+
+commit 05311e3f1f20dc4026f9dd351f82e21bb75958bc
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Sun Oct 22 16:00:18 2017 -0500
+
+    modified table icons on page 'song'
+
+commit c436b7c5328fa9136f95e9620ade17f2104f1adb
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Sun Oct 22 14:48:09 2017 -0500
+
+    fixed wrong order of table
+
+commit 0cad652bd44df56b0b444ab1886701acfe85d6f2
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Sun Oct 22 14:40:48 2017 -0500
+
+    fix random order of table
+
+commit 1d77b74c3de57eb318dfcfce6eb9d06a04a84a54
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Sun Oct 22 14:33:10 2017 -0500
+
+    add table to songs page
+
+commit a37a9706d88e13148f56d5617655ec7efc6b5bcc
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Sat Oct 21 17:22:20 2017 -0500
+
+    host web on http://128.83.139.95:5000/
+
+commit 3e73f667bd5f23ba05ec947c1ebbc8ea1c3c51b5
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Sat Oct 21 17:07:31 2017 -0500
+
+    add general CSS
+
+commit 7bbd172633b3d4c1940834b7374ec36aadd1ac65
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Sat Oct 21 14:15:07 2017 -0500
+
+    manually change some bad depends
+
+commit 38826bba944702335d181acf5e1af088e131985a
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Sat Oct 21 14:11:05 2017 -0500
+
+    modified requirements
+
+commit 15b26ecc9dee6b6d5e590bfad70d90613f898080
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Sat Oct 21 14:09:25 2017 -0500
+
+    updated requirements.txt
+
+commit 7ea4c01cda29ee610cf1e93174b08bee9c232243
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Sat Oct 21 13:51:53 2017 -0500
+
+    add instructions
+
+commit d4c253c99cc9428fbc0365b0c57678087793a75e
+Author: Yu Lu <yulu@utexas.edu>
+Date:   Sat Oct 21 13:41:11 2017 -0500
+
+    initial commit to new branch
+
+commit 579f37f465120f8b8e90f47d9efaeedfc8543c40
+Author: Juan <jtrj33@gmail.com>
+Date:   Wed Oct 18 18:26:01 2017 -0500
+
+    Update main.py and __init__.py
+
+commit dfb2ff2f63de64ac2c34ca896259dc4993b9616a
+Author: Juan <jtrj33@gmail.com>
+Date:   Wed Oct 18 17:37:56 2017 -0500
+
+    Add README.md
+
+commit 7241a7235b6095170926c06eda4a19a748058285
+Author: Juan <jtrj33@gmail.com>
+Date:   Wed Oct 18 17:35:06 2017 -0500
+
+    Add yaml, requirements and python code to deploy simple app
+
+commit dbede22c6bc25b8f5d141fea36d553689dfc3895
+Author: Juan <jtrj33@gmail.com>
+Date:   Wed Oct 18 16:46:54 2017 -0500
+
+    Add headshot
+
+commit f3b579f36e01ed21dc25dee05ab9492f83fce8d5
+Author: Juan <jtrj33@gmail.com>
+Date:   Wed Oct 18 16:34:13 2017 -0500
+
+    Initial commit
