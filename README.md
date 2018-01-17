@@ -1,5 +1,12 @@
 # CS329E idb Project - NetTunes
 ## About
+Visit Nettunes [here](http://www.nettunes.me)!
+
+Nettunes is an on-line music database which allows users to search for artists, albums, and songs. The site was built
+on Google Cloud Platform with HTML5/CSS3/Javascript, utilizing Python and SQLAlchemy to interact with the
+postrgreSQL database, and Jinja2 templates for the individual pages. Scrapy was used to extract data from iTunes to
+build the database.
+
 
 ## How to Run  
 To run the NetTunes app on your local computer:
