@@ -10,7 +10,7 @@ from sqlalchemy import Column, ForeignKey, Integer, String, Text, Float, LargeBi
 from app.models import *
 
 import sys
-from scrapy.cmdline import execute
+#from scrapy.cmdline import execute
 Base.metadata.bind = engine
 DBSession = sessionmaker(bind=engine)
 session = DBSession()
