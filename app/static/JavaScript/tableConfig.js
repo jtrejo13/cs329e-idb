@@ -13,16 +13,15 @@ $(function(){
 	}
     });
 
-    
     $("table").tablesorterPager({
 	container: $("#pager"),
     });
 
     $('select').change(function(){
-	// modify the search input data-column value (swap "0" or "all")
-	$('.selectable').attr( 'data-column', $(this).val() );
-	// update external search inputs
-	$.tablesorter.filter.bindSearch( $table, $('.search'), false );
+		// modify the search input data-column value (swap "0" or "all")
+		$('.selectable').attr( 'data-column', $(this).val() );
+		// update external search inputs
+		$.tablesorter.filter.bindSearch( $table, $('.search'), false );
     });
 });
 

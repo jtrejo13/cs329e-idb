@@ -1,6 +1,6 @@
 import json, logging
 
-# import the following dependencies from SQLAlchmey
+# import the following dependencies from SQLAlchemy
 # and the empty database we created into our environment
 from sqlalchemy.orm import sessionmaker
 from app.models import Artists, Albums, Songs, engine, Base
@@ -47,7 +47,7 @@ def create_songs():
         duration = one_song["duration"]
 
         newSong = Songs(name = name, artist = artist, album = album, rank = rank, song_link = song_link, genre = genre, release_date = release_date, duration = duration)
-        # After I create the book, I can then add it to my session.
+        # After I create the Song, I can then add it to my session.
         session.add(newSong)
         # commit the session to my DB.
         session.commit()
@@ -66,7 +66,7 @@ def create_artists():
         bio = one_artist["intro"]
 
         newArtist = Artists(name = name, artist_link = artist_link, pic_link = pic_link, origin = origin, genre = genre, start_date = start_date, latest_release = latest_release, bio = bio)
-        # After I create the book, I can then add it to my session.
+        # After I create the Artist, I can then add it to my session.
         session.add(newArtist)
         # commit the session to my DB.
         session.commit()
@@ -86,7 +86,7 @@ def create_albums():
         track_list = one_album["track"]
 
         newAlbum = Albums(name = name, album_link = album_link, pic_link = pic_link, release_date = release_date, info = info, artist = artist, genre = genre, num_tracks = num_tracks, track_list = track_list)
-        # After I create the book, I can then add it to my session.
+        # After I create the Album, I can then add it to my session.
         session.add(newAlbum)
         # commit the session to my DB.
         session.commit()
