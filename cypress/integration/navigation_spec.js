@@ -1,7 +1,7 @@
-Cypress.on('uncaught:exception', (err, runnable) => {
-    // prevent uncaught assertion errors when loading each page
-    return false
-})
+// Cypress.on('uncaught:exception', (err, runnable) => {
+//     // prevent uncaught assertion errors when loading each page
+//     return false
+// })
 
 describe('Testing navbar links', function() {
     beforeEach(function () {

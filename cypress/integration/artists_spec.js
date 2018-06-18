@@ -1,7 +1,7 @@
-Cypress.on('uncaught:exception', (err, runnable) => {
-    // prevent uncaught assertion errors when loading each page
-    return false
-})
+// Cypress.on('uncaught:exception', (err, runnable) => {
+//     // prevent uncaught assertion errors when loading each page
+//     return false
+// })
 
 describe('Test Artists Page', function() {
     beforeEach(function() {
@@ -41,7 +41,7 @@ describe('Test Artists Page', function() {
             .should('have.value', '10')
         // confirm pagedisplay is updated
         cy.get('.pagedisplay').should(($span) => {
-            const textArr = $span.text().split(' ')
+            var textArr = $span.text().split(' ')
             expect(textArr).to.have.lengthOf(6)
             expect(textArr[2]).to.eq('10')
         })
@@ -51,7 +51,7 @@ describe('Test Artists Page', function() {
             .should('have.value', '20')
         // confirm pagedisplay is updated
         cy.get('.pagedisplay').should(($span) => {
-            const textArr = $span.text().split(' ')
+            var textArr = $span.text().split(' ')
             expect(textArr).to.have.lengthOf(6)
             expect(textArr[2]).to.eq('20')
         })
@@ -70,24 +70,73 @@ describe('Test Artists Page', function() {
     it('Test pager buttons', function() {
         // test page size 10
         cy.get('.pagesize').select('10')
-        cy.get('.pagedisplay').should('contain', '1 to 10')
+        cy.get('.pagedisplay').should('contain', '1 – 10')
         cy.get('.next').click()
-        cy.get('.pagedisplay').should('contain', '11 to 20')
+        cy.get('.pagedisplay').should('contain', '11 – 20')
         cy.get('.prev').click()
-        cy.get('.pagedisplay').should('contain', '1 to 10')
+        cy.get('.pagedisplay').should('contain', '1 – 10')
         // after clicking last, show that pagedisplay is on last page
         cy.get('.last').click()
         cy.get('.pagedisplay').should(($span) => {
-            const textArr = $span.text().split(' ')
+            var textArr = $span.text().split(' ')
             expect(textArr).to.have.lengthOf(6)
             expect(textArr[2]).to.eq(textArr[4])
         })
         // after clicking first, show that pagedisplay is on first page
         cy.get('.first').click()
-        cy.get('.pagedisplay').should('contain', '1 to 10')
+        cy.get('.pagedisplay').should('contain', '1 – 10')
     })
 
-    // test search results
+    it.only('Test search \'ap\'', function() {
+        // first search for 'ap'
+        cy.get('.search')
+            .type('ap')
+        // test pagedisplay length and correct rows
+        cy.get('.pagedisplay').should(($span) => {
+            var textArr = $span.text().split(' ')
+            expect(textArr).to.have.lengthOf(8)
+            expect(textArr[4]).to.eq('14')
+        })
+        // ensure each row contains 'ap' (case-insensitive)
+        cy.get('tbody > tr:visible').then(($tr) => {
+            expect($tr).to.have.lengthOf(10)
+            cy.wrap($tr).each(($row) => {
+                cy.wrap($row).contains(/ap/i)
+            })
+        })
 
-    // test reset
+        // next page
+        cy.get('.next').click()
+        // ensure each row contains 'ap' (case-insensitive)
+        cy.get('tbody > tr:visible').then(($tr) => {
+            expect($tr).to.have.lengthOf(4)
+            cy.wrap($tr).each(($row) => {
+                cy.wrap($row).contains(/ap/i)
+            })
+        })
+
+        // change input selector to genre
+        cy.get('.change-input').select('Genre')
+        cy.get('.search').type('ap')
+        // ensure each genre contains 'ap' (case-insensitive)
+        cy.wait(200)
+        cy.get('tbody > tr:visible > :nth-child(3)').then(($tr) => {
+            expect($tr).to.have.lengthOf(4)
+            cy.wrap($tr).each(($row) => {
+                cy.wrap($row).contains(/ap/i)
+            })
+        })
+
+        // test reset
+        cy.get('.reset').click()
+        cy.get('.pagedisplay').should(($span) => {
+            var textArr = $span.text().split(' ')
+            expect(textArr).to.have.lengthOf(6)
+            expect(textArr[4]).to.eq('67')
+        })
+    })
+
+    it('Test column sorting', function() {
+
+    })
 })
