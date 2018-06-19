@@ -12,25 +12,13 @@ describe('Testing navbar links', function() {
     it('test home scroll to top', function() {
         cy.scrollTo(0,500)
         cy.get('.navbar-brand').click()
-        cy.wait(500)
-        cy.window({ timeout: 10000 }).then(($window) => {
+        cy.wait(500) // wait for window to scroll
+        cy.window().then(($window) => {
             expect($window.scrollY).to.be.closeTo(0, 100);
         })
     })
 
     it('test artists', function() {
-        // cy.on('uncaught:exception', (err, runnable) => {
-        //     expect(err.message).to.include('This error originated from your application code')
-        //
-        //     // using mocha's async done callback to finish
-        //     // this test so we prove that an uncaught exception
-        //     // was thrown
-        //     done()
-        //
-        //     // return false to prevent the error from
-        //     // failing this test
-        //     return false
-        // })
         cy.get(':nth-child(1) > .nav-link').click()
         cy.url().should('eq', 'http://localhost:8000/artists')
     })
@@ -53,7 +41,6 @@ describe('Testing navbar links', function() {
     it('test about and home', function() {
         cy.get(':nth-child(5) > .nav-link').click()
         cy.url().should('eq', 'http://localhost:8000/about')
-
         cy.get('.navbar-brand').click()
         cy.url().should('eq', 'http://localhost:8000/')
     })

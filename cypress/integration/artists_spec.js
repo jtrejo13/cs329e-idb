@@ -87,7 +87,7 @@ describe('Test Artists Page', function() {
         cy.get('.pagedisplay').should('contain', '1 – 10')
     })
 
-    it.only('Test search \'ap\'', function() {
+    it('Test search \'ap\'', function() {
         // first search for 'ap'
         cy.get('.search')
             .type('ap')
@@ -97,7 +97,7 @@ describe('Test Artists Page', function() {
             expect(textArr).to.have.lengthOf(8)
             expect(textArr[4]).to.eq('14')
         })
-        // ensure each row contains 'ap' (case-insensitive)
+        // ensure each visible row contains 'ap' (case-insensitive)
         cy.get('tbody > tr:visible').then(($tr) => {
             expect($tr).to.have.lengthOf(10)
             cy.wrap($tr).each(($row) => {
@@ -119,7 +119,7 @@ describe('Test Artists Page', function() {
         cy.get('.change-input').select('Genre')
         cy.get('.search').type('ap')
         // ensure each genre contains 'ap' (case-insensitive)
-        cy.wait(200)
+        cy.wait(100)
         cy.get('tbody > tr:visible > :nth-child(3)').then(($tr) => {
             expect($tr).to.have.lengthOf(4)
             cy.wrap($tr).each(($row) => {
@@ -137,6 +137,40 @@ describe('Test Artists Page', function() {
     })
 
     it('Test column sorting', function() {
+        // test name column
+        // ensure that the first row comes before the second and last alphabetically
+        cy.get('tbody > tr > :nth-child(1) > a').then(($rows) => {
+            cy.wrap($rows[0].text).should('be.lte', $rows[1].text)
+            cy.wrap($rows[1].text).should('be.lte', $rows[2].text)
+            cy.wrap($rows[2].text).should('be.lte', $rows[$rows.length-1].text)
+        })
+        // click name column head
+        cy.get('[data-column="0"] > .tablesorter-header-inner').click()
+        // ensure order is opposite
+        cy.get('tbody > tr > :nth-child(1) > a').then(($rows) => {
+            cy.wrap($rows[0].text).should('be.gte', $rows[1].text)
+            cy.wrap($rows[1].text).should('be.gte', $rows[2].text)
+            cy.wrap($rows[2].text).should('be.gte', $rows[$rows.length-1].text)
+        })
 
+        // test origin column
+        // cy.get('.pagesize').select('All Rows')
+        // click origin column head
+        cy.get('[data-column="1"] > .tablesorter-header-inner').click()
+        // ensure order is opposite
+        cy.get('tbody > tr > :nth-child(2)').then(($rows) => {
+            cy.wrap($rows[0].innerHTML).should('be.gte', $rows[1].innerHTML)
+            cy.wrap($rows[1].innerHTML).should('be.gte', $rows[2].innerHTML)
+            cy.wrap($rows[2].innerHTML).should('be.gte', $rows[$rows.length-1].innerHTML)
+        })
+        // click origin column head
+        cy.get('[data-column="1"] > .tablesorter-header-inner').click()
+        // ensure order is opposite
+        cy.get('tbody > tr > :nth-child(2)').then(($rows) => {
+            cy.wrap($rows[0].innerHTML).should('be.lte', $rows[1].innerHTML)
+            cy.wrap($rows[1].innerHTML).should('be.lte', $rows[2].innerHTML)
+            // last rows contain blank origin
+            //cy.wrap($rows[2].innerHTML).should('be.lte', $rows[$rows.length-1].innerHTML)
+        })
     })
 })
